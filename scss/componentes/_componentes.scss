@@ -1,0 +1,47 @@
+@import "./base/variables";
+@import "./base/mixins";
+
+
+.botonProdsRecomendados{
+    @include boton;
+    @include latoBold12;
+    color:$blanco;
+    background-color: $botonRojo;
+    padding: 0.5rem 0;
+    width: 160px;
+}
+/* Botones Descuentos */
+.botonDescuento{
+    @include boton;
+    @include latoReg13;
+    padding: 0.5rem 0;
+    width: 280px;
+    color:$textos;
+    background-color: $blanco;
+}   
+.botonDescuentoClickeado{
+    @include boton;
+    @include latoReg13; 
+    background-color: $botonRojo;
+    font-weight: bold;
+    padding: 0.5rem ;
+    width: 280px;
+}
+/* botones descuentos Fijo bottom */
+.botonDescuentoFijo{
+    @include boton;
+    @include latoReg13;
+    padding: 0.5rem 0;
+    width: 328px;
+    color:$blanco;
+    background-color: $botonRojo;
+}   
+.botonDescuentoClickeadoFijo{
+    @include boton;
+    @include latoReg13; 
+    background-color: $blanco;
+    color: $textos;
+    font-weight: bold;
+    padding: 0.5rem ;
+    width: 328px;
+}

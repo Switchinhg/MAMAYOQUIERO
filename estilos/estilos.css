@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif; }
+
+/* Boton */
+.botonProdsRecomendados {
+  height: 40px;
+  color: #FFFFFF;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 12pt;
+  color: #FFFFFF;
+  background-color: #880935;
+  padding: 0.5rem 0;
+  width: 160px; }
+  .botonProdsRecomendados:hover {
+    cursor: pointer; }
+
+/* Botones Descuentos */
+.botonDescuento {
+  height: 40px;
+  color: #FFFFFF;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: none;
+  border-radius: 50px;
+  font-size: 13px;
+  padding: 0.5rem 0;
+  width: 280px;
+  color: #242424;
+  background-color: #FFFFFF; }
+  .botonDescuento:hover {
+    cursor: pointer; }
+
+.botonDescuentoClickeado {
+  height: 40px;
+  color: #FFFFFF;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: none;
+  border-radius: 50px;
+  font-size: 13px;
+  background-color: #880935;
+  font-weight: bold;
+  padding: 0.5rem;
+  width: 280px; }
+  .botonDescuentoClickeado:hover {
+    cursor: pointer; }
+
+/* botones descuentos Fijo bottom */
+.botonDescuentoFijo {
+  height: 40px;
+  color: #FFFFFF;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: none;
+  border-radius: 50px;
+  font-size: 13px;
+  padding: 0.5rem 0;
+  width: 328px;
+  color: #FFFFFF;
+  background-color: #880935; }
+  .botonDescuentoFijo:hover {
+    cursor: pointer; }
+
+.botonDescuentoClickeadoFijo {
+  height: 40px;
+  color: #FFFFFF;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: none;
+  border-radius: 50px;
+  font-size: 13px;
+  background-color: #FFFFFF;
+  color: #242424;
+  font-weight: bold;
+  padding: 0.5rem;
+  width: 328px; }
+  .botonDescuentoClickeadoFijo:hover {
+    cursor: pointer; }
+
+.gradiente {
+  background: linear-gradient(0deg, #ffaecd 0%, rgba(255, 255, 255, 0) 50%, #ffaecd 100%);
+  height: 2000px; }
+
+/* Boton */

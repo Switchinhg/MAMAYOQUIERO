@@ -1,0 +1,65 @@
+//Textos
+@mixin latoReg13{
+    font-size:13px;
+}
+
+@mixin latoBold12{
+    font-weight: bold;
+    font-size: 12pt;
+}
+@mixin atoReg16{
+    font-size: 16pt;
+}
+@mixin latoItalic20{
+    font-style: italic;
+    font-size: 20pt;
+}
+@mixin latoReg20{
+    font-size: 20pt;
+}
+@mixin latoBold20{
+    font-weight: bold;
+    font-size: 20pt;
+}
+@mixin latoReg24{
+    font-size: 24pt;
+}
+@mixin latoBold24{
+    font-weight: bold;
+    font-size: 24pt;
+}
+@mixin latoExtraBold24{
+    font-weight: bolder;
+    font-size: 24pt;
+}
+@mixin latoBold32{
+    font-weight: bold;
+    font-size: 32pt;
+}
+@mixin latoBlack32{
+    font-weight: 900;
+    font-size: 32pt;
+}
+@mixin latoBlack48{
+    font-weight: 900;
+    font-size: 48pt;
+}
+@mixin latoBlack64{
+    font-weight: 900;
+    font-size: 64pt;
+}
+/* Boton */
+@mixin boton{
+    height: 40px;
+    color:$blanco;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: none;
+    border-radius: 50px;
+    &:hover{
+        cursor: pointer;
+    }
+}
