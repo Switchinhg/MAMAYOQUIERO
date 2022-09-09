@@ -5,61 +5,78 @@
 
 @mixin latoBold12{
     font-weight: bold;
-    font-size: 12pt;
+    font-size: 12px;
 }
-@mixin atoReg16{
-    font-size: 16pt;
+@mixin latoReg16{
+    font-size: 16px;
 }
 @mixin latoItalic20{
     font-style: italic;
-    font-size: 20pt;
+    font-size: 20px;
 }
 @mixin latoReg20{
-    font-size: 20pt;
+    font-size: 20px;
 }
 @mixin latoBold20{
     font-weight: bold;
-    font-size: 20pt;
+    font-size: 20px;
 }
 @mixin latoReg24{
-    font-size: 24pt;
+    font-size: 24px;
 }
 @mixin latoBold24{
     font-weight: bold;
-    font-size: 24pt;
+    font-size: 24px;
 }
 @mixin latoExtraBold24{
     font-weight: bolder;
-    font-size: 24pt;
+    font-size: 24px;
 }
 @mixin latoBold32{
     font-weight: bold;
-    font-size: 32pt;
+    font-size: 32px;
 }
 @mixin latoBlack32{
     font-weight: 900;
-    font-size: 32pt;
+    font-size: 32px;
 }
 @mixin latoBlack48{
     font-weight: 900;
-    font-size: 48pt;
+    font-size: 48px;
 }
 @mixin latoBlack64{
     font-weight: 900;
-    font-size: 64pt;
+    font-size: 64px;
 }
-/* Boton */
-@mixin boton{
-    height: 40px;
-    color:$blanco;
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+@mixin barrita {
+    color:$separadores;
+    background-color: $separadores;
+    height: 3px;
     border: none;
-    border-radius: 50px;
-    &:hover{
-        cursor: pointer;
+    border-radius: 10px;
+}
+.animacionWiggle{
+    animation: Wiggle 1s  1 alternate ease-out forwards;
+}
+
+
+@keyframes Wiggle {
+    0%{
+    
+    }
+    20%{
+        transform: translate(-4rem,0);
+    }
+    40%{
+        transform: translate(4rem,0);
+    }
+    60%{
+        transform: translate(-2rem,0);
+    }
+    80%{
+        transform: translate(2rem,0);
+    }
+    100%{
+
     }
 }

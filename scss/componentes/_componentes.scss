@@ -3,45 +3,57 @@
 
 
 .botonProdsRecomendados{
-    @include boton;
-    @include latoBold12;
+    @include latoBold20;
     color:$blanco;
     background-color: $botonRojo;
-    padding: 0.5rem 0;
-    width: 160px;
+    width: 212px;
+    height: 56px;
 }
 /* Botones Descuentos */
 .botonDescuento{
-    @include boton;
     @include latoReg13;
     padding: 0.5rem 0;
     width: 280px;
+    height: 48px;
     color:$textos;
     background-color: $blanco;
 }   
 .botonDescuentoClickeado{
-    @include boton;
     @include latoReg13; 
     background-color: $botonRojo;
+    color: $blanco;
     font-weight: bold;
-    padding: 0.5rem ;
     width: 280px;
+    height: 48px;
 }
 /* botones descuentos Fijo bottom */
 .botonDescuentoFijo{
-    @include boton;
     @include latoReg13;
-    padding: 0.5rem 0;
     width: 328px;
+    height: 48px;
     color:$blanco;
     background-color: $botonRojo;
 }   
 .botonDescuentoClickeadoFijo{
-    @include boton;
     @include latoReg13; 
     background-color: $blanco;
     color: $textos;
     font-weight: bold;
-    padding: 0.5rem ;
     width: 328px;
+    height: 48px;
+}
+
+/* Boton */
+.boton{
+    display: flex;
+    text-decoration: none;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: none;
+    border-radius: 50px;
+    &:hover{
+        cursor: pointer;
+    }
 }
