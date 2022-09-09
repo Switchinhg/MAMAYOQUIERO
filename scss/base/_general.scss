@@ -1,6 +1,48 @@
+@import "./mixins";
 //Clases
 .gradiente{
-    background: linear-gradient(0deg, rgba(255,174,205,1) 0%, rgba(255,255,255,0) 50%, rgba(255,174,205,1) 100%);
-    height: 2000px;//para ver como quedaba el fondo
+    // background: linear-gradient(0deg, rgba(255,174,205,1) 0%, rgba(255,255,255,0) 50%, rgba(255,174,205,1) 100%);
+    background: linear-gradient(0deg, rgba(255,174,205,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 60%, rgba(255,174,205,1) 100%);
 }
 
+//Textos
+.latoReg13{
+    @include latoReg13;
+}
+
+.latoBold12{
+    @include latoBold12;
+}
+.latoReg16{
+    @include latoReg16;
+}
+.latoItalic20{
+    @include latoItalic20;
+}
+.latoReg20{
+    @include latoReg20;
+}
+.latoBold20{
+    @include latoBold20;
+}
+.latoReg24{
+    @include latoReg24;
+}
+.latoBold24{
+    @include latoBold24;
+}
+.latoExtraBold24{
+    @include latoExtraBold24;
+}
+.latoBold32{
+    @include latoBold32;
+}
+.latoBlack32{
+    @include latoBlack32;
+}
+.latoBlack48{
+    @include latoBlack48;
+}
+.latoBlack64{
+    @include latoBlack64;
+}

@@ -8,25 +8,83 @@
     <script src="./js/main.js" defer></script>
     <title>Mamá yo quiero</title>
 </head>
-<body class="contenedor gradiente">
+<body class="gradiente">
 
-    <button class="botonProdsRecomendados"><img src="./imgs/iconos/icon-shopping.svg" alt="Icono de carrito de compras"> Ir a la tienda</button>
+    <!-- Productos recomendados -->
+    <section id="productosRecomendados" class="contenedor">
+
+        <div class="prodsRecWrap">   
+            <!-- Moldes de silicona -->
+            <div class="prodsWrap">
+                <div><img class="prodsImg" src="./imgs/imagenes/molde-silicona.png" alt=""></div>
+                <div class="infoWrap">
+                    <p class="titulo">Moldes de Silicona</p>
+                    <hr class="barritaProd">
+                    <p class="textoProdsR">Vas lograr excelentes resultados, agilizando el tiempo de elaboración
+                        de un pedido o trabajo.</p>
+                    <a href="https://mamayoquiero.com.ar/moldes-de-silicona1/" class="boton botonProdsRecomendados" target="_blank">Ver Moldes</a>
+                </div>
+            </div>
+            <!-- Cortantes -->
+            <div class="prodsWrap invert">
+                <div><img class="prodsImg" src="./imgs/imagenes/cortante.png" alt=""></div>
+                <div class="infoWrap">
+                    <p class="titulo">Cortantes</p>
+                    <hr class="barritaProd">
+                    <p class="textoProdsR">Tener el marcador de masa, <br>
+                        aparte del cortante, te permite trabajar
+                        con más libertad.</p>
+                    <a href="https://mamayoquiero.com.ar/cortantes/" class="boton botonProdsRecomendados" target="_blank">Ver Cortantes</a>
+                </div>
+            </div>
+            <!-- Insumos-->
+            <div class="prodsWrap">
+                <div><img class="prodsImg" src="./imgs/imagenes/insumo.png" alt=""></div>
+                <div class="infoWrap">
+                    <p class="titulo">Insumos</p>
+                    <hr class="barritaProd">
+                    <p class="textoProdsR">Tenemos una amplia variedad de herramientas e insumos para todo lo que necesites al alcance de un click.</p>
+                    <a href="https://mamayoquiero.com.ar/herramientas/" class="boton botonProdsRecomendados" target="_blank">Ver Insumos</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Cuando el usuario baja aparece esta parte -->
+    <div class="footer "> 
+        <div class="iconoSubir"> <img id="clickarriba"  src="./imgs/iconos/chevron-up.svg" alt=""></div>
+        <div class="codigoyTexto">
+            <p class="latoReg16">Copia y pega el código antes de finalizar <br>
+                con la compra y disfruta de tu beneficio</p>
+
+                <div id="botonCopiarRojo">
+                    <button id="select" class="boton botonDescuentoFijo "><img src="./imgs/iconos/IconCopyBlanco.svg" alt="icono de copiar texto"> <span> Cod. 10% descuento <b>MAMAYOQUIERO</b></span></button>
+                </div>
+            </div>
+    </div>
+
+<!--     
+    <a href="https://mamayoquiero.com.ar/" class="boton botonProdsRecomendados"><img src="./imgs/iconos/icon-shopping.svg" alt="Icono de carrito de compras"> Ir a la tienda</a>
     <br>
-    <button class="botonProdsRecomendados">Ver Moldes</button>
+    <button class="boton botonProdsRecomendados">Ver Moldes</button>
     <br>
-    <button class="botonProdsRecomendados">Ver Cortantes</button>
+    <button class="boton botonProdsRecomendados">Ver Cortantes</button>
     <br>
-    <button class="botonProdsRecomendados">Ver Insumos</button>
+    <button class="boton botonProdsRecomendados">Ver Insumos</button>
     <br>
-    <button class="botonDescuento"><img src="./imgs/iconos/IconCopyNegro.svg" alt="Icono de copiar texto"> <span> Cod. 10% descuento <b>MAMAYOQUIERO</b></span></button>
+    Blanco
+    <button class="boton botonDescuento"><img src="./imgs/iconos/IconCopyNegro.svg" alt="Icono de copiar texto"> <span> Cod. 10% descuento <b>MAMAYOQUIERO</b></span></button>
     <br>
-    <button class="botonDescuentoClickeado"><img src="./imgs/iconos/IconCheckBlanco.svg" alt="Icono de texto copiado"> Código de descuento copiado</button>
+    <button class="boton botonDescuentoClickeado"><img src="./imgs/iconos/IconCheckBlanco.svg" alt="Icono de texto copiado"> Código de descuento copiado</button>
     <br>
-    <button class="botonDescuentoFijo"><img src="./imgs/iconos/IconCopyBlanco.svg" alt="icono de copiar texto"> <span> Cod. 10% descuento <b>MAMAYOQUIERO</b></span></button>
+    Rojo
+    <button class="boton botonDescuentoFijo"><img src="./imgs/iconos/IconCopyBlanco.svg" alt="icono de copiar texto"> <span> Cod. 10% descuento <b>MAMAYOQUIERO</b></span></button>
     <br>
-    <button class="botonDescuentoClickeadoFijo"><img src="./imgs/iconos/IconCheckNegro.svg" alt="icono de copiar texto"> Código de descuento copiado</button>
+    <button class="boton botonDescuentoClickeadoFijo"><img src="./imgs/iconos/IconCheckNegro.svg" alt="icono de copiar texto"> Código de descuento copiado</button> -->
 
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
 
 </html>
