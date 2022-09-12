@@ -48,12 +48,13 @@
     font-weight: 900;
     font-size: 64px;
 }
-@mixin barrita {
+@mixin barrita($width) {
     color:$separadores;
     background-color: $separadores;
     height: 3px;
     border: none;
     border-radius: 10px;
+    width:$width;
 }
 .animacionWiggle{
     animation: Wiggle 1s  1 alternate ease-out forwards;
