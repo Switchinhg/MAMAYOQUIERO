@@ -3,6 +3,9 @@ let iconoSubir = document.getElementById('clickarriba')
 let botonRojo = document.getElementById("botonCopiarRojo")
 let footer = document.getElementsByClassName("footer")[0]
 const select = document.getElementById("select")
+/* acordion */
+const acordion = document.getElementsByClassName('acordion')
+const icons = document.getElementsByClassName("icono");
 
 //event listeners y onClick
 
@@ -46,3 +49,20 @@ const Observador = new IntersectionObserver(entrada =>{
 })
 //se le dice al observador que tiene que observar 
 Observador.observe(document.querySelector('#botonCopiarRojo'))
+
+
+/* Acordeon */
+
+for(let i = 0 ;i< acordion.length; i++ ){
+    acordion[i].addEventListener('click', ()=>{
+        acordion[i].nextElementSibling.classList.toggle('activo')
+        /* para que la pregunta final quede bien el border-bottom */
+        if(acordion[i].classList.contains('last')){
+            acordion[i].nextElementSibling.classList.toggle('borderR')
+            acordion[i].classList.toggle('borderR')
+        }
+
+        icons[i].src = acordion[i].nextElementSibling.classList.contains('activo') ? "./imgs/imagenes/chevronDown.png" : "./imgs/imagenes/chevronRight.png";
+        acordion[i].nextElementSibling.classList.contains('activo')? icons[i].style.height = '18px' : icons[i].style.height = '30px'
+    })
+}
