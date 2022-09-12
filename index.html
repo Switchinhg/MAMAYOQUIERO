@@ -4,55 +4,203 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="./estilos/estilos.css">
+    <!-- Font awesome icons-->
+    <script src="https://kit.fontawesome.com/b4fc7efcd0.js" crossorigin="anonymous"></script>
+    <!-- Akar icons -->
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <!-- Js scripts -->
     <script src="./js/main.js" defer></script>
     <title>Mamá yo quiero</title>
 </head>
 <body class="gradiente">
-
-    <!-- Productos recomendados -->
-    <section id="productosRecomendados" class="contenedor">
-
-        <div class="prodsRecWrap">   
-            <!-- Moldes de silicona -->
-            <div class="prodsWrap">
-                <div><img class="prodsImg" src="./imgs/imagenes/molde-silicona.png" alt=""></div>
-                <div class="infoWrap">
-                    <p class="titulo">Moldes de Silicona</p>
-                    <hr class="barritaProd">
-                    <p class="textoProdsR">Vas lograr excelentes resultados, agilizando el tiempo de elaboración
-                        de un pedido o trabajo.</p>
-                    <a href="https://mamayoquiero.com.ar/moldes-de-silicona1/" class="boton botonProdsRecomendados" target="_blank">Ver Moldes</a>
+    <header>
+        <!-- Logo marca -->
+        <a href="index.html"><img src="./imgs/logo/logo-mamayoquiero.png" alt="mama yo quiero"></a>
+        
+        <!-- Navbar MOBILE -->
+        <div class="nav-mobile">
+            <!-- boton hamburguesa -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ThreeLineHorizontal"><path d="M5 6h14M5 12h14M5 18h14"/></svg>
+            <!-- menu desplegable -->
+            <div class="nav-mobile-collapsible">
+                <!-- Titulo y close btn -->
+                <div class="nav-mobile-title-container">
+                    <h2 class="nav-mobile-title">Menú</h2>
+                    <img class="" src="./imgs/iconos/icon-x-close.svg" alt="close">
+                </div>
+                <!-- links internos -->
+                <div class="nav-mobile-menu">
+                    <div>
+                        <img src="./imgs/iconos/icon-shopping.svg" alt="shopping">
+                        <a href="#" class="mobile-links">Tienda</a>
+                    </div>
+                    <div>
+                        <img src="./imgs/iconos/message-dots-square.svg" alt="mensaje">
+                        <a href="#" class="mobile-links">Nosotros</a>
+                    </div>
+                    <div>
+                        <img src="./imgs/iconos/help-circle.svg" alt="ayuda">
+                        <a href="#" class="mobile-links">Ayuda</a>
+                    </div>
+                </div>
+                <!-- Contenedor iconos rrss -->
+                <div class="nav-mobile-rrss-container">
+                    <i class="fa-brands fa-square-pinterest"></i>
+                    <i class="ai-instagram-fill"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
                 </div>
             </div>
-            <!-- Cortantes -->
-            <div class="prodsWrap invert">
-                <div><img class="prodsImg" src="./imgs/imagenes/cortante.png" alt=""></div>
-                <div class="infoWrap">
-                    <p class="titulo">Cortantes</p>
-                    <hr class="barritaProd">
-                    <p class="textoProdsR">Tener el marcador de masa, <br>
-                        aparte del cortante, te permite trabajar
-                        con más libertad.</p>
-                    <a href="https://mamayoquiero.com.ar/cortantes/" class="boton botonProdsRecomendados" target="_blank">Ver Cortantes</a>
-                </div>
+        </div>
+
+        <!-- Navbar DESKTOP -->
+        <div class="nav-desktop">
+            <ul>
+                <li href="#" class="mobile-links">Tienda</li>
+                <li href="#" class="mobile-links">Nosotros</li>
+                <li href="#" class="mobile-links">Ayuda</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <!-- Principal "Bienvenida" -->
+        <div class="welcome-container">
+
+            <div class="welcome-description">
+                <h2 class="welcome-title">¡Felicitaciones!</h2>
+                <p class="welcome-img">Te ganaste un 10% OFF en tu próxima compra usando el cúpon <strong>MAMAYOQUIERO</strong></p>
+                <p>Copia y pega el código antes de finalizar con la compra y disfruta de tu beneficio</p>
             </div>
-            <!-- Insumos-->
-            <div class="prodsWrap">
-                <div><img class="prodsImg" src="./imgs/imagenes/insumo.png" alt=""></div>
-                <div class="infoWrap">
-                    <p class="titulo">Insumos</p>
-                    <hr class="barritaProd">
-                    <p class="textoProdsR">Tenemos una amplia variedad de herramientas e insumos para todo lo que necesites al alcance de un click.</p>
-                    <a href="https://mamayoquiero.com.ar/herramientas/" class="boton botonProdsRecomendados" target="_blank">Ver Insumos</a>
+
+            <!-- contenedor copiar código descuento MAMAYOQUIERO -->
+            <div class="desc-code-container"><!-- -script- copy to clipboard (https://blog.saeloun.com/2022/06/09/copying-texts-to-clipboard-using-javascript) -->
+                <!-- btn copiar -->
+                <img src="imgs/iconos/IconCopyNegro.svg" alt="copiar al portapapeles">
+                <!-- descripción copiar descuento -->
+                <p>Cod. 10% descuento MAMAYOQUIERO</p>
+            </div>
+            
+            <!-- botón ir a la tienda vista desktop -->
+            <div class="iralatienda-btn-desktop">
+                <img src="./imgs/iconos/icon-shopping.svg" alt="shopping">
+                <h6>Ir a la tienda</h6>
+            </div>
+
+            <!-- Imagen presentación, nena -->
+            <img src="imgs/imagenes/congrats-img-kid.png" alt="bienvenida">
+
+            <!-- boton ir a la tienda vista móvil -->
+            <div class="iralatienda-container-mobile">
+                <h6>¡Gracias por preferirnos!</h6>
+                <div class="iralatienda-btn">
+                    <img src="./imgs/iconos/icon-shopping.svg" alt="shopping">
+                    <h6>Ir a la tienda</h6>
                 </div>
             </div>
 
         </div>
+        
+        <!-- Productos recomendados -->
+        <section id="productosRecomendados" class="contenedor">
+    
+            <div class="prodsRecWrap">   
+                <!-- Moldes de silicona -->
+                <div class="prodsWrap">
+                    <div><img class="prodsImg" src="./imgs/imagenes/molde-silicona.png" alt=""></div>
+                    <div class="infoWrap">
+                        <p class="titulo">Moldes de Silicona</p>
+                        <hr class="barritaProd">
+                        <p class="textoProdsR">Vas lograr excelentes resultados, agilizando el tiempo de elaboración
+                            de un pedido o trabajo.</p>
+                        <a href="https://mamayoquiero.com.ar/moldes-de-silicona1/" class="boton botonProdsRecomendados" target="_blank">Ver Moldes</a>
+                    </div>
+                </div>
+                <!-- Cortantes -->
+                <div class="prodsWrap invert">
+                    <div><img class="prodsImg" src="./imgs/imagenes/cortante.png" alt=""></div>
+                    <div class="infoWrap">
+                        <p class="titulo">Cortantes</p>
+                        <hr class="barritaProd">
+                        <p class="textoProdsR">Tener el marcador de masa, <br>
+                            aparte del cortante, te permite trabajar
+                            con más libertad.</p>
+                        <a href="https://mamayoquiero.com.ar/cortantes/" class="boton botonProdsRecomendados" target="_blank">Ver Cortantes</a>
+                    </div>
+                </div>
+                <!-- Insumos-->
+                <div class="prodsWrap">
+                    <div><img class="prodsImg" src="./imgs/imagenes/insumo.png" alt=""></div>
+                    <div class="infoWrap">
+                        <p class="titulo">Insumos</p>
+                        <hr class="barritaProd">
+                        <p class="textoProdsR">Tenemos una amplia variedad de herramientas e insumos para todo lo que necesites al alcance de un click.</p>
+                        <a href="https://mamayoquiero.com.ar/herramientas/" class="boton botonProdsRecomendados" target="_blank">Ver Insumos</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </section>
 
-    </section>
+        <!-- Sobre nosotros -->
+        <div class="nosotros-container">
+            <h2>Sobre nosotros</h2>
+            <p class="nosotros-description">Somos un emprendimiento que provee insumos, herramientas y moldes de silicona para productos de pastelería y porcelana fría en todo el país. </p>
+            <p class="nosotros-vision">Nuestro objetivo es brindar soluciones a personas que se desempeñen como reposteras, por placer o profesionalmente, y que desarrollen actividades relacionadas a las manualidades con porcelana fría, acompañándolas en este maravilloso mundo del arte y la creatividad.</p>
+        </div>
+
+        <!-- Testimonio de clientes -->
+        <div class="testimonios-container">
+            <div class="testimonios-card">
+                <img src="imgs/iconos/annotation-heart.svg" alt="amor">
+                <h3 class="user-name">Jessica Salas</h3>
+                <p class="testimonio-usuario">Mi experiencia fue la mejor, Pao me contestó siempre y muy bien. Me cambiaron lo que pedí mal y todo llegó a tiempo y forma, los productos lindísimos.</p>
+                <p>reseña de facebook</p>
+            </div>
+            <div class="testimonios-card">
+                <img src="imgs/iconos/annotation-heart.svg" alt="amor">
+                <h3 class="user-name">Nadia Maza</h3>
+                <p class="testimonio-usuario">Excelentes los productos, muy buenas terminaciones en los moldes y cortantes. Sobre todo, excelente la atención al cliente...</p>
+                <p>reseña de facebook</p>
+            </div>
+            <div class="testimonios-card">
+                <img src="imgs/iconos/annotation-heart.svg" alt="amor">
+                <h3 class="user-name">Eva Balestrieri</h3>
+                <p class="testimonio-usuario">Los mejores! Siempre compro porque son geniales. Excelente calidad... Te duran la vida entera y tienen de todo. Divinos! Sobre todo muy buena atención</p>
+                <p>reseña de facebook</p>
+            </div>
+        </div>
+
+        <!-- Suscripcion newsletter -->
+        <div class="newsletter-container">
+            <img src="imgs/imagenes/newsletter-img.png" alt="suscribite">
+            <h2>No te pierdas de nuestras ofertas</h2>
+            <hr>
+            <p>Es un buen momento para que te suscribas y recibas todas las ofertas, tutoriales y más</p>
+            <!-- Btn suscripcion -->
+            <div class="btn-suscripcion">
+                <input type="email" placeholder="ingresa tu email">
+                <button>Suscribirme</button>
+            </div>
+        </div>
+
+        <div class="contact-rrss">
+            <img src="imgs/imagenes/seguinosredes-img.png" alt="seguinos">
+            <p>¡Seguinos en nuestras redes!</p>
+            <hr>
+            <div class="rrss-list">
+                <i class="fa-brands fa-square-pinterest"></i>
+                <i class="ai-instagram-fill"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+            </div>
+        </div>
+
+        <img src="imgs/logo/Logo_footer_mamayoquiero.png" alt="mama yo quiero">
+
+    </main>
     <!-- Cuando el usuario baja aparece esta parte -->
-    <div class="footer "> 
+    <footer class="footer "> 
         <div class="iconoSubir"> <img id="clickarriba"  src="./imgs/iconos/chevron-up.svg" alt=""></div>
         <div class="codigoyTexto">
             <p class="latoReg16">Copia y pega el código antes de finalizar <br>
@@ -62,7 +210,7 @@
                     <button id="select" class="boton botonDescuentoFijo "><img src="./imgs/iconos/IconCopyBlanco.svg" alt="icono de copiar texto"> <span> Cod. 10% descuento <b>MAMAYOQUIERO</b></span></button>
                 </div>
             </div>
-    </div>
+    </footer>
 
 <!--     
     <a href="https://mamayoquiero.com.ar/" class="boton botonProdsRecomendados"><img src="./imgs/iconos/icon-shopping.svg" alt="Icono de carrito de compras"> Ir a la tienda</a>
