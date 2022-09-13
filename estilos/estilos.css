@@ -1,20 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap");
-.animacionWiggle {
-  animation: Wiggle 1s  1 alternate ease-out forwards; }
-
-@keyframes Wiggle {
-  0% { }
-  20% {
-    transform: translate(-4rem, 0); }
-  40% {
-    transform: translate(4rem, 0); }
-  60% {
-    transform: translate(-2rem, 0); }
-  80% {
-    transform: translate(2rem, 0); }
-  100% { } }
-
 * {
   margin: 0;
   padding: 0;
@@ -28,21 +13,130 @@
   max-width: 1126px;
   margin: 0 auto; }
 
-.animacionWiggle {
-  animation: Wiggle 1s  1 alternate ease-out forwards; }
+/* Sección Productos recomendados */
+.prodsImg {
+  width: 400px; }
 
-@keyframes Wiggle {
-  0% { }
-  20% {
-    transform: translate(-4rem, 0); }
-  40% {
-    transform: translate(4rem, 0); }
-  60% {
-    transform: translate(-2rem, 0); }
-  80% {
-    transform: translate(2rem, 0); }
-  100% { } }
+.prodsWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem; }
 
+.infoWrap {
+  width: 448px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; }
+
+.textoProdsR {
+  line-height: 1.6rem; }
+
+.prodsRecWrap {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 5rem 1rem;
+  margin: 1rem; }
+
+.invert {
+  flex-direction: row-reverse; }
+
+/* Fin Prods Destacados */
+.contenedorPreguntas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2rem; }
+
+.prodsTitulo {
+  font-weight: 900;
+  font-size: 48px; }
+
+.contenedorInner {
+  width: 100%;
+  max-width: 800px; }
+
+.pregTitulo {
+  font-weight: 900;
+  font-size: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem; }
+
+.barritaProdpf {
+  color: #F088AF;
+  background-color: #F088AF;
+  height: 3px;
+  border: none;
+  border-radius: 10px;
+  width: 212px; }
+
+.acordion {
+  font-weight: bold;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 1rem;
+  background-color: #FFFFFF;
+  color: #242424;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: solid 3px #FFE1EC; }
+
+.border {
+  border-radius: 20px 20px 0 0; }
+
+.borderR {
+  border-radius: 0 0 20px 20px; }
+
+.panel {
+  background-color: #FFFFFF;
+  display: none;
+  border-bottom: solid 3px #FFE1EC;
+  padding: 2rem;
+  overflow: hidden;
+  border-left: solid 4px #F088AF; }
+
+.panel p {
+  font-size: 20px; }
+
+.activo {
+  display: block; }
+
+/* Footer */
+.fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.codigoyTexto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 0.5rem 0;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.507); }
+
+.iconoSubir {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem; }
+  .iconoSubir img {
+    cursor: pointer;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.507);
+    border-radius: 50%; }
+
+/* Fin Footer */
 .botonProdsRecomendados {
   font-weight: bold;
   font-size: 20px;
@@ -84,10 +178,6 @@
   width: 328px;
   height: 48px; }
 
-.titulo {
-  font-weight: 900;
-  font-size: 48px; }
-
 .barritaProd {
   color: #F088AF;
   background-color: #F088AF;
@@ -108,21 +198,6 @@
   border-radius: 50px; }
   .boton:hover {
     cursor: pointer; }
-
-.animacionWiggle {
-  animation: Wiggle 1s  1 alternate ease-out forwards; }
-
-@keyframes Wiggle {
-  0% { }
-  20% {
-    transform: translate(-4rem, 0); }
-  40% {
-    transform: translate(4rem, 0); }
-  60% {
-    transform: translate(-2rem, 0); }
-  80% {
-    transform: translate(2rem, 0); }
-  100% { } }
 
 .gradiente {
   background: linear-gradient(0deg, #ffaecd 0%, rgba(255, 174, 205, 0.260924) 33.3%, rgba(255, 174, 205, 0.26) 66.66%, #ffaecd 100%); }
@@ -175,6 +250,56 @@
   font-weight: 900;
   font-size: 64px; }
 
+@media only screen and (max-width: 768px) {
+  /* Preguntas Frecuentes */
+  .acordion {
+    font-weight: bold;
+    font-size: 12px; }
+  .codigoyTexto {
+    justify-content: center; }
+    .codigoyTexto p {
+      display: none; }
+  .panel {
+    padding: 1rem; }
+    .panel p {
+      font-size: 13px; }
+  /* Productos Destacados */
+  .pregTitulo {
+    font-weight: 900;
+    font-size: 32px;
+    align-items: flex-start; }
+  .prodsWrap {
+    flex-direction: column;
+    gap: 0;
+    background-color: #FFFFFF;
+    border-radius: 20px; }
+  .infoWrap {
+    width: auto;
+    align-items: center;
+    padding: 1rem; }
+  .invert {
+    flex-direction: column; }
+  .prodsTitulo {
+    font-weight: 900;
+    font-size: 32px; }
+  .textoProdsR {
+    line-height: 1rem;
+    text-align: center;
+    font-size: 16px; }
+  .prodsImg {
+    width: 216px; }
+  .prodsRecWrap {
+    background-color: rgba(255, 255, 255, 0);
+    gap: 1rem; }
+  .barritaProd {
+    color: #F088AF;
+    background-color: #F088AF;
+    height: 3px;
+    border: none;
+    border-radius: 10px;
+    width: 160px; } }
+
+/* animacion */
 .animacionWiggle {
   animation: Wiggle 1s  1 alternate ease-out forwards; }
 
@@ -189,114 +314,3 @@
   80% {
     transform: translate(2rem, 0); }
   100% { } }
-
-.prodsImg {
-  width: 400px; }
-
-/* Sección Productos recomendados */
-.prodsWrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem; }
-
-.infoWrap {
-  width: 448px;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem; }
-
-.textoProdsR {
-  line-height: 1.6rem; }
-
-.prodsRecWrap {
-  background-color: #FFFFFF;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-  padding: 5rem 2rem; }
-
-.invert {
-  flex-direction: row-reverse; }
-
-.fixed {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0; }
-
-.codigoyTexto {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #FFFFFF;
-  padding: 0.5rem 0;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.507); }
-
-.iconoSubir {
-  display: flex;
-  justify-content: center;
-  padding: 0.5rem; }
-  .iconoSubir img {
-    cursor: pointer;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.507);
-    border-radius: 50%; }
-
-.pregFrec {
-  width: 800px;
-  border-radius: 10px;
-  margin: 5rem auto; }
-
-.pregTitulo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem; }
-
-.barritaProdpf {
-  color: #F088AF;
-  background-color: #F088AF;
-  height: 3px;
-  border: none;
-  border-radius: 10px;
-  width: 212px; }
-
-.acordion {
-  font-weight: bold;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  gap: 1rem;
-  background-color: #FFFFFF;
-  color: #242424;
-  cursor: pointer;
-  padding: 1rem;
-  width: 100%;
-  border: none;
-  outline: none;
-  border-bottom: solid 3px #FFE1EC; }
-
-.border {
-  border-radius: 20px 20px 0 0; }
-
-.borderR {
-  border-radius: 0 0 20px 20px; }
-
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  border-bottom: solid 3px #FFE1EC;
-  padding: 2rem;
-  overflow: hidden;
-  border-left: solid 4px #F088AF; }
-
-.panel p {
-  font-size: 20px; }
-
-/* acordion */
-.activo {
-  display: block; }
