@@ -42,9 +42,7 @@
     width: 328px;
     height: 48px;
 }
-.titulo{
-    @include latoBlack48;
-}
+
 .barritaProd{
     @include barrita(98px);
 }

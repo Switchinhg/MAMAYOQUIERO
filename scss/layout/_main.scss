@@ -1,15 +1,16 @@
-.prodsImg{
-    width: 400px;
-}
-
+@import '../base/variables';
 
 
 /* Sección Productos recomendados */
+.prodsImg{
+    width: 400px;
+}
 .prodsWrap{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4rem;
+    
 }
 .infoWrap{
     width: 448px;
@@ -26,43 +27,31 @@
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    padding:5rem 2rem;
+    padding:5rem 1rem;
+    margin: 1rem;
 }
 .invert{
     flex-direction: row-reverse;
 }
-.fixed{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-.codigoyTexto{
+/* Fin Prods Destacados */
+
+.contenedorPreguntas{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    background-color: $blanco;
-    padding: 0.5rem 0;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.507);
+    margin: 0 2rem;
+    
 }
-.iconoSubir{
-    display: flex;
-    justify-content: center;
-    padding: 0.5rem;
-    img{
-        cursor: pointer;
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0.507);
-        border-radius: 50%;
-    }
+.prodsTitulo{
+    @include latoBlack48;
+}
+.contenedorInner{
+    width: 100%;
+    max-width: 800px;
 }
 
-.pregFrec{
-    width: 800px;
-    border-radius: 10px;
-    margin: 5rem auto;
-}
 .pregTitulo{
-
+    @include latoBlack48;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,6 +77,7 @@
     border-bottom: solid 3px $separadoresPregFrec;
     
 }
+
 .border{
     border-radius: 20px 20px 0 0;
 }
@@ -95,20 +85,45 @@
     border-radius: 0 0 20px 20px;
 }
 .panel {
-    padding: 0 18px;
-    background-color: white;
+    background-color: $blanco;
     display: none;
     border-bottom: solid 3px $separadoresPregFrec;
     padding: 2rem;
     overflow: hidden;
     border-left: solid 4px $separadores;
 }
-
-
 .panel p{
     @include latoReg20;
 }
-/* acordion */
 .activo{
     display: block;
 }
+
+
+
+/* Footer */
+.fixed{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.codigoyTexto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $blanco;
+    padding: 0.5rem 0;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.507);
+}
+.iconoSubir{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    img{
+        cursor: pointer;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.507);
+        border-radius: 50%;
+    }
+}
+/* Fin Footer */

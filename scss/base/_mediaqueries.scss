@@ -1,0 +1,88 @@
+@import './mixins';
+
+@media only screen and (max-width: 768px) {
+    /* Preguntas Frecuentes */
+    .acordion{
+        @include latoBold12;
+    }
+    .codigoyTexto{
+        justify-content: center;
+        p{
+            display: none;
+        }
+    }
+    .panel {
+        padding: 1rem ;
+
+        p{
+            @include latoReg13;
+        }
+    }
+    /* Productos Destacados */
+    .pregTitulo{
+        @include latoBlack32;
+        align-items: flex-start;
+
+    }
+    .prodsWrap{
+        flex-direction: column;
+        gap: 0;
+        background-color: $blanco;
+        border-radius: 20px;
+    }
+    .infoWrap{
+        width: auto;
+        align-items: center;
+        padding: 1rem;
+    }
+    .invert{
+        flex-direction: column;
+    }
+    .prodsTitulo{
+        @include latoBlack32;
+    }
+    .textoProdsR{
+        line-height: 1rem;
+        text-align: center;
+        @include latoReg16
+    }
+    .prodsImg{
+        width: 216px;
+    }
+    .prodsRecWrap{
+        background-color: rgba(255, 255, 255, 0);
+        gap: 1rem;
+    }
+    .barritaProd{
+        @include barrita(160px);
+    }
+
+}
+
+/* animacion */
+
+.animacionWiggle{
+    animation: Wiggle 1s  1 alternate ease-out forwards;
+}
+
+
+@keyframes Wiggle {
+    0%{
+    
+    }
+    20%{
+        transform: translate(-4rem,0);
+    }
+    40%{
+        transform: translate(4rem,0);
+    }
+    60%{
+        transform: translate(-2rem,0);
+    }
+    80%{
+        transform: translate(2rem,0);
+    }
+    100%{
+
+    }
+}
