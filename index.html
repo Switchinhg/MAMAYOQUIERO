@@ -15,42 +15,42 @@
     <title>Mamá yo quiero</title>
 </head>
 <body class="gradiente">
-    <header>
+    <header class="header">
         <!-- Logo marca -->
-        <a href="index.html"><img src="./imgs/logo/logo-mamayoquiero.png" alt="mama yo quiero"></a>
+        <a class="logo" href="index.html"><img class="nav-logo" src="./imgs/logo/logo-mamayoquiero.png" alt="mama yo quiero"></a>
         
-        <!-- Navbar MOBILE -->
-        <div class="nav-mobile">
-            <!-- boton hamburguesa -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ThreeLineHorizontal"><path d="M5 6h14M5 12h14M5 18h14"/></svg>
-            <!-- menu desplegable -->
-            <div class="nav-mobile-collapsible">
-                <!-- Titulo y close btn -->
-                <div class="nav-mobile-title-container">
-                    <h2 class="nav-mobile-title">Menú</h2>
-                    <img class="" src="./imgs/iconos/icon-x-close.svg" alt="close">
+        <!-- boton hamburguesa -->
+        <svg id="btn-burger" class="btn-burger" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ThreeLineHorizontal"><path d="M5 6h14M5 12h14M5 18h14"/></svg>
+
+        <!-- Navbar Desplegable -->
+        <div class="nav-mobile-collapsible-close" id="collapsible-menu">
+            <!-- Titulo y close btn -->
+            <div class="nav-mobile-title-container">
+                <h2 class="nav-mobile-title">Menú</h2>
+                <img id="btn-nav-close" class="btn-nav-close" src="./imgs/iconos/icon-x-close.svg" alt="close">
+            </div>
+            <hr class="barrita-header">
+            <!-- links -->
+            <div class="nav-mobile-menu">
+                <div class="nav-link-container">
+                    <img src="./imgs/iconos/icon-shopping.svg" alt="shopping">
+                    <a href="#" class="mobile-links">Tienda</a>
                 </div>
-                <!-- links internos -->
-                <div class="nav-mobile-menu">
-                    <div>
-                        <img src="./imgs/iconos/icon-shopping.svg" alt="shopping">
-                        <a href="#" class="mobile-links">Tienda</a>
-                    </div>
-                    <div>
-                        <img src="./imgs/iconos/message-dots-square.svg" alt="mensaje">
-                        <a href="#" class="mobile-links">Nosotros</a>
-                    </div>
-                    <div>
-                        <img src="./imgs/iconos/help-circle.svg" alt="ayuda">
-                        <a href="#" class="mobile-links">Ayuda</a>
-                    </div>
+                <div class="nav-link-container">
+                    <img src="./imgs/iconos/message-dots-square.svg" alt="mensaje">
+                    <a href="#" class="mobile-links">Nosotros</a>
                 </div>
-                <!-- Contenedor iconos rrss -->
-                <div class="nav-mobile-rrss-container">
-                    <i class="fa-brands fa-square-pinterest"></i>
-                    <i class="ai-instagram-fill"></i>
-                    <i class="fa-brands fa-square-facebook"></i>
+                <div class="nav-link-container">
+                    <img src="./imgs/iconos/help-circle.svg" alt="ayuda">
+                    <a href="#" class="mobile-links">Ayuda</a>
                 </div>
+            </div>
+            <hr class="barrita-header">
+            <!-- Contenedor iconos rrss -->
+            <div class="nav-mobile-rrss-container">
+                <a href="https://www.facebook.com/Mama-Yo-Quiero-Moldes-de-Silicona-e-Insumos-257171107644876/"><img src="./imgs/iconos/ico-rrss-facebook.svg" alt="facebook"></a> 
+                <a href="https://www.instagram.com/mamayoquiero.ar/"><img class="nav-ico-instagram" src="./imgs/iconos/ico-rrss-instagram.svg" alt="instagram"></a>
+                <a href="https://ar.pinterest.com/mamayoquiero/_created/"><img src="./imgs/iconos/ico-rrss-pinterest.svg" alt="pinterest"></a>
             </div>
         </div>
 
@@ -270,7 +270,8 @@
     Rojo
     <button class="boton botonDescuentoFijo"><img src="./imgs/iconos/IconCopyBlanco.svg" alt="icono de copiar texto"> <span> Cod. 10% descuento <b>MAMAYOQUIERO</b></span></button>
     <br>
-    <button class="boton botonDescuentoClickeadoFijo"><img src="./imgs/iconos/IconCheckNegro.svg" alt="icono de copiar texto"> Código de descuento copiado</button> -->
+    <button class="boton botonDescuentoClickeadoFijo"><img src="./imgs/iconos/IconCheckNegro.svg" alt="icono de copiar texto"> Código de descuento copiado</button> 
+-->
 
 
 </body>

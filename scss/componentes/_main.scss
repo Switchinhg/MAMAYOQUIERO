@@ -2,8 +2,6 @@
     width: 400px;
 }
 
-
-
 /* Sección Productos recomendados */
 .prodsWrap{
     display: flex;
@@ -70,7 +68,7 @@
     margin-bottom: 1rem
 }
 .barritaProdpf{
-    @include barrita(212px);
+    @include barrita(212px, 3px);
 }
 .acordion{
     @include latoBold24;

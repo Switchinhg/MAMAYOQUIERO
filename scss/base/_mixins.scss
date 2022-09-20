@@ -9,6 +9,7 @@
 }
 @mixin latoReg16{
     font-size: 16px;
+    font-weight: normal;
 }
 @mixin latoItalic20{
     font-style: italic;
@@ -48,10 +49,10 @@
     font-weight: 900;
     font-size: 64px;
 }
-@mixin barrita($width) {
+@mixin barrita($width, $height) {
     color:$separadores;
     background-color: $separadores;
-    height: 3px;
+    height: $height;
     border: none;
     border-radius: 10px;
     width:$width;

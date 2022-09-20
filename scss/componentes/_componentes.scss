@@ -46,9 +46,8 @@
     @include latoBlack48;
 }
 .barritaProd{
-    @include barrita(98px);
+    @include barrita(98px, 3px);
 }
-
 /* Boton */
 .boton{
     display: flex;
