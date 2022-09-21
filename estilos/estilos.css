@@ -346,37 +346,42 @@ main {
 .testimonios-container {
   padding: 1rem;
   display: flex;
-  overflow-x: scroll; }
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory; }
   .testimonios-container .testimonios-card {
+    scroll-snap-align: center;
     margin: 0 20px;
-    height: 264px;
-    min-width: 216px;
+    height: 360px;
+    min-width: 268px;
     padding: 1rem;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    border-radius: 10px; }
+    border-radius: 14px;
+    box-shadow: 8px 8px 14px rgba(75, 74, 74, 0.2); }
     .testimonios-container .testimonios-card img {
       width: 40px;
       height: 40px; }
     .testimonios-container .testimonios-card .user-name {
-      font-weight: bold;
-      font-size: 16px;
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: 1px;
       color: #880935;
-      text-rendering: geometricPrecision; }
+      text-rendering: geometricPrecision;
+      text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1); }
     .testimonios-container .testimonios-card .testimonio-usuario {
       margin: 15px 0;
       line-height: .8rem;
       width: 172px;
       text-align: center;
       text-rendering: optimizeLegibility;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: normal; }
     .testimonios-container .testimonios-card .card-facebook {
       font-style: italic;
-      font-size: 12px; }
+      font-size: 14px; }
 
 .faq-container {
   display: flex;
