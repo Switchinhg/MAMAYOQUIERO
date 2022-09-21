@@ -11,7 +11,11 @@
     <!-- Akar icons -->
     <script src="https://unpkg.com/akar-icons-fonts"></script>
     <!-- Js scripts -->
-    <script src="./js/main.js" defer></script>
+    <script src="./js/acordeon.js" defer></script>
+    <script src="./js/navbar.js" defer></script>
+    <script src="./js/botondescfix.js" defer></script>
+
+    <script defer type="text/javascript" src="https://optin.myperfit.com/res/js/ambosalabama1/OqcOHNL8.js"></script>
     <title>Mamá yo quiero</title>
 </head>
 <body class="gradiente">
@@ -20,8 +24,7 @@
         <a class="logo" href="index.html"><img class="nav-logo" src="./imgs/logo/logo-mamayoquiero.png" alt="mama yo quiero"></a>
         
         <!-- boton hamburguesa -->
-        <svg id="btn-burger" class="btn-burger" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ThreeLineHorizontal"><path d="M5 6h14M5 12h14M5 18h14"/></svg>
-
+        <img id="btn-burger" class="btn-burger" src="./imgs/iconos/btn-burger.svg" alt="abrir menu">
         <!-- Navbar Desplegable -->
         <div class="nav-mobile-collapsible-close" id="collapsible-menu">
             <!-- Titulo y close btn -->
@@ -63,6 +66,7 @@
             </ul>
         </div>
     </header>
+    
     <main>
         <!-- Principal "Bienvenida" -->
         <div class="welcome-container">
@@ -96,12 +100,14 @@
         </div>
         
         <!-- Productos recomendados -->
-        <section id="productosRecomendados" class="productosRecomendados">
+        <section class="productos-rec-container" id="productosRecomendados">
     
             <div class="prodsRecWrap">   
                 <!-- Moldes de silicona -->
                 <div class="prodsWrap">
-                    <div><img class="prodsImg" src="./imgs/imagenes/molde-silicona.png" alt=""></div>
+                    <div>
+                        <img class="prodsImg" src="./imgs/imagenes/molde-silicona.png" alt="molde de silicona">
+                    </div>
                     <div class="infoWrap">
                         <p class="prodsTitulo">Moldes de Silicona</p>
                         <hr class="barritaProd">
@@ -112,41 +118,44 @@
                 </div>
                 <!-- Cortantes -->
                 <div class="prodsWrap invert">
-                    <div><img class="prodsImg" src="./imgs/imagenes/cortante.png" alt=""></div>
+                    <div>
+                        <img class="prodsImg" src="./imgs/imagenes/cortante.png" alt="molde de silicona 2">
+                    </div>
                     <div class="infoWrap">
                         <p class="prodsTitulo">Cortantes</p>
                         <hr class="barritaProd">
                         <p class="textoProdsR">Tener el marcador de masa, <br>
                             aparte del cortante, te permite trabajar
                             con más libertad.</p>
-                        <a href="https://mamayoquiero.com.ar/cortantes/" class="boton botonProdsRecomendados" target="_blank">Ver Cortantes</a>
+                        <a class="boton botonProdsRecomendados" href="https://mamayoquiero.com.ar/cortantes/" target="_blank">Ver Cortantes</a>
                     </div>
                 </div>
                 <!-- Insumos-->
                 <div class="prodsWrap">
-                    <div><img class="prodsImg" src="./imgs/imagenes/insumo.png" alt=""></div>
+                    <div>
+                        <img class="prodsImg" src="./imgs/imagenes/insumo.png" alt="molde de silicona 3">
+                    </div>
                     <div class="infoWrap">
                         <p class="prodsTitulo">Insumos</p>
                         <hr class="barritaProd">
                         <p class="textoProdsR">Tenemos una amplia variedad de herramientas e insumos para todo lo que necesites al alcance de un click.</p>
                         <a href="https://mamayoquiero.com.ar/herramientas/" class="boton botonProdsRecomendados" target="_blank">Ver Insumos</a>
                     </div>
-                </div>
-    
+                </div>   
             </div>
     
         </section>
 
         <!-- Sobre nosotros -->
-        <div class="nosotros-container">
+        <section class="nosotros-container">
             <h2 class="nosotros-title">Sobre nosotros</h2>
             <hr class="barrita-nosotros">
             <p class="nosotros-description">Somos un emprendimiento que provee <strong> insumos, herramientas y moldes de silicona </strong> para productos de pastelería y porcelana fría en todo el país. </p>
             <p class="nosotros-description"><strong>Nuestro objetivo es brindar soluciones</strong>a personas que se desempeñen como reposteras, por placer o profesionalmente, y que desarrollen actividades relacionadas a las manualidades con porcelana fría, <strong>acompañándolas en este maravilloso mundo</strong> del arte y la creatividad.</p>
-        </div>
+        </section>
 
         <!-- Testimonio de clientes -->
-        <div class="testimonios-container">
+        <section class="testimonios-container">
             <div class="testimonios-card">
                 <img src="imgs/iconos/annotation-heart.svg" alt="amor">
                 <h3 class="user-name">Jessica Salas</h3>
@@ -165,31 +174,28 @@
                 <p class="testimonio-usuario">Los mejores! Siempre compro porque son geniales. Excelente calidad... Te duran la vida entera y tienen de todo. Divinos! Sobre todo muy buena atención</p>
                 <p class="card-facebook">reseña de facebook</p>
             </div>
-        </div>
+        </section>
 
         <!-- Suscripcion newsletter -->
-        <div class="newsletter-container">
-            <!-- <img src="imgs/imagenes/newsletter-img.png"  -->alt="suscribite">
-            <h2>No te pierdas de nuestras ofertas</h2>
-            <hr>
-            <p>Es un buen momento para que te suscribas y recibas todas las ofertas, tutoriales y más</p>
+        <section class="newsletter-container">
+            <img class="newsletter-img" src="imgs/imagenes/newsletter-img.png" alt="suscribite">
+            <h2 class="newsletter-title">No te pierdas <br> nuestras ofertas</h2>
+            <hr class="barrita-newsletter"> 
+            <p class="newsletter-text">Es un buen momento para que te suscribas y recibas todas las ofertas, tutoriales y más</p>
             <!-- Btn suscripcion -->
-            <div class="btn-suscripcion">
-                <input type="email" placeholder="ingresa tu email">
-                <button>Suscribirme</button>
+            <div class="btn-suscripcion-container">
+                <div id="optin-OqcOHNL8" data-type="inline"></div><link rel="stylesheet" type="text/css" href="https://optin.myperfit.com/res/css/ambosalabama1/OqcOHNL8.css"/>
+                <button class="boton botonSuscripcion">Suscribirme</button>
             </div>
-        </div>
-        </section >
+        </section>
 
             <!-- Sección de Preguntas frecuentes -->
-        <section id="preguntasFrecuentes" class="contenedorPreguntas">
+        <section id="preguntasFrecuentes" class="faq-container">
                 <div class="contenedorInner">
-
                     <div class="pregTitulo">
                         <h3>Preguntas frecuentes</h3>
                         <hr class="barritaProdpf">
                     </div>
-                
                     <!-- Pregunta 1 -->
                     <button class="acordion border"><img class="icono" src="./imgs/imagenes/chevronRight.png" alt=""> ¿Cómo puedo utilizar el cupón de descuento?</button>
                     <div class="panel">
@@ -223,23 +229,25 @@
                 </div>
         </section>
 
-        <div class="contact-rrss">
-            <!-- <img src="imgs/imagenes/seguinosredes-img.png" alt="seguinos"> -->
-            <p>¡Seguinos en nuestras redes!</p>
-            <hr>
-            <div class="rrss-list">
-                <i class="fa-brands fa-square-pinterest"></i>
-                <i class="ai-instagram-fill"></i>
-                <i class="fa-brands fa-square-facebook"></i>
+        <section class="contact-rrss-container">
+            <img  class="rrss-img" src="imgs/imagenes/seguinosredes-img.png" alt="seguinos">
+            <p class="rrss-title" >¡Seguinos en nuestras redes!</p>
+            <hr class="barrita-rrss" >
+            <div class="rrss-ico-container">
+                <a href="https://www.facebook.com/Mama-Yo-Quiero-Moldes-de-Silicona-e-Insumos-257171107644876/"><img src="./imgs/iconos/ico-rrss-facebook.svg" alt="facebook"></a> 
+                <a href="https://www.instagram.com/mamayoquiero.ar/"><img class="rrss-ico-instagram" src="./imgs/iconos/ico-rrss-instagram.svg" alt="instagram"></a>
+                <a href="https://ar.pinterest.com/mamayoquiero/_created/"><img src="./imgs/iconos/ico-rrss-pinterest.svg" alt="pinterest"></a>
             </div>
-        </div>
+        </section>
 
-        <img src="imgs/logo/Logo_footer_mamayoquiero.png" alt="mama yo quiero">
-
+        <section class="casi-footer">
+            <img src="imgs/logo/Logo_footer_mamayoquiero.png" alt="mama yo quiero">
+        </section>
+        
     </main>
-
+    
     <!-- Cuando el usuario baja aparece esta parte -->
-    <footer class="footer "> 
+    <footer class="footer-container"> 
         <div class="iconoSubir"> <img id="clickarriba"  src="./imgs/iconos/chevron-up.svg" alt=""></div>
         <div class="codigoyTexto">
             <p class="latoReg16">Copia y pega el código antes de finalizar <br>
@@ -250,28 +258,6 @@
                 </div>
             </div>
     </footer>
-
-<!--     
-    
-    <br>
-    <button class="boton botonProdsRecomendados">Ver Moldes</button>
-    <br>
-    <button class="boton botonProdsRecomendados">Ver Cortantes</button>
-    <br>
-    <button class="boton botonProdsRecomendados">Ver Insumos</button>
-    <br>
-    Blanco
-    <button class="boton botonDescuento"><img src="./imgs/iconos/IconCopyNegro.svg" alt="Icono de copiar texto"> <span> Cod. 10% descuento <b>MAMAYOQUIERO</b></span></button>
-    <br>
-    <button class="boton botonDescuentoClickeado"><img src="./imgs/iconos/IconCheckBlanco.svg" alt="Icono de texto copiado"> Código de descuento copiado</button>
-    <br>
-    Rojo
-    <button class="boton botonDescuentoFijo"><img src="./imgs/iconos/IconCopyBlanco.svg" alt="icono de copiar texto"> <span> Cod. 10% descuento <b>MAMAYOQUIERO</b></span></button>
-    <br>
-    <button class="boton botonDescuentoClickeadoFijo"><img src="./imgs/iconos/IconCheckNegro.svg" alt="icono de copiar texto"> Código de descuento copiado</button> 
--->
-
-
 </body>
 <!-- ClipBoard -->
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>

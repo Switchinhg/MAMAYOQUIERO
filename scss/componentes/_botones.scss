@@ -45,10 +45,6 @@
     width: 328px;
     height: 48px;
 }
-
-.barritaProd{
-    @include barrita(98px, 3px);
-}
 /* Boton */
 .boton{
     display: flex;
@@ -61,5 +57,16 @@
     border-radius: 50px;
     &:hover{
         cursor: pointer;
+    }
+}
+/* Boton suscripcion */
+.botonSuscripcion{
+    @include latoBold16;
+    color:$blanco;
+    background-color: $botonRojo;
+    width: 280px;
+    height: 40px;
+    img{
+        width: 28px;
     }
 }

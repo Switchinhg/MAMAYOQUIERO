@@ -1,0 +1,57 @@
+@import '../base/variables';
+.productos-rec-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .prodsRecWrap{
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding:1rem 0;
+        margin: 1rem;
+        width: 328px;
+        min-width: 328px;
+        .prodsWrap{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0;
+            background-color: $blanco;
+            border-radius: 20px;
+            padding: 1rem;
+            div{
+                .prodsImg{
+                    width: 216px;
+                }
+            }
+            .infoWrap{
+                width: auto;
+                align-items: center;
+                display: flex;
+                padding: 0 1rem 1rem 1rem;
+                flex-direction: column;
+                gap: 1rem;
+                .prodsTitulo{
+                    @include latoBlack32;
+                    text-align: center;
+                }
+                .textoProdsR{
+                    line-height: 1rem;
+                    text-align: center;
+                    @include latoReg16
+                }
+                .barritaProd{
+                    @include barrita(160px, 3px);
+                }
+            }
+        }
+        .invert{
+            flex-direction: column;
+        }
+    }
+}
+
+

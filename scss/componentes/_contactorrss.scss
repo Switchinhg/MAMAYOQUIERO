@@ -1,0 +1,30 @@
+.contact-rrss-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .rrss-img{
+        width: 232px;
+    }
+    .rrss-title{
+        @include latoBlack32;
+        text-align: center;
+    }
+    .barrita-rrss{
+        @include barrita(160px, 2px);
+        margin: .5rem 0;
+    }
+    .rrss-ico-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 1rem;
+        a{
+            img{
+                width: calc(1.3rem*1.5);
+            }
+            .rrss-ico-instagram{
+                width: calc(1.5rem*1.5);                
+            }
+        }
+    }
+}
