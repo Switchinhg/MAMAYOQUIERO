@@ -1,7 +1,5 @@
 @import "./base/fuentes";
 @import "./base/reset";
-@import "./layout/layout";
-@import "./layout/main";
 @import "./componentes/componentes";
 @import "./base/general";
 @import "./base/variables";
@@ -9,4 +7,7 @@
 @import "./componentes/header";
 @import "./componentes/greetings";
 @import "./componentes/main";
+@import "./componentes/nosotros";
+@import "./componentes/reviewcards";
+@import "./componentes/faqs";
 @import "./base/mediaqueries"

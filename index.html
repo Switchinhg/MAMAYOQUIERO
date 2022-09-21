@@ -69,34 +69,28 @@
 
             <div class="welcome-description">
                 <h2 class="welcome-title">¡Felicitaciones!</h2>
-                <p class="welcome-img">Te ganaste un 10% OFF en tu próxima compra usando el cúpon <strong>MAMAYOQUIERO</strong></p>
-                <p>Copia y pega el código antes de finalizar con la compra y disfruta de tu beneficio</p>
+                <p class="welcome-text">Te ganaste un 10% OFF en tu próxima compra usando el cúpon <strong>MAMAYOQUIERO</strong></p>
             </div>
-
+            
             <!-- contenedor copiar código descuento MAMAYOQUIERO -->
             <div class="desc-code-container"><!-- -script- copy to clipboard (https://blog.saeloun.com/2022/06/09/copying-texts-to-clipboard-using-javascript) -->
-                <!-- btn copiar -->
-                <img src="imgs/iconos/IconCopyNegro.svg" alt="copiar al portapapeles">
-                <!-- descripción copiar descuento -->
-                <p>Cod. 10% descuento MAMAYOQUIERO</p>
+                <button class="boton botonDescuento"><img src="./imgs/iconos/IconCopyNegro.svg" alt="Icono de copiar texto"> <span> Cod. 10% descuento <b>MAMAYOQUIERO</b></span></button>
+                <p class="code-info">Copia y pega el código antes de finalizar con la compra y disfruta de tu beneficio</p>
             </div>
+            
             
             <!-- botón ir a la tienda vista desktop -->
             <div class="iralatienda-btn-desktop">
-                <img src="./imgs/iconos/icon-shopping.svg" alt="shopping">
-                <h6>Ir a la tienda</h6>
+                <a href="https://mamayoquiero.com.ar/" class="boton botonProdsRecomendados"><img src="./imgs/iconos/icon-shopping-white.svg" alt="Icono de carrito de compras"> Ir a la tienda</a>
             </div>
 
             <!-- Imagen presentación, nena -->
-            <img src="imgs/imagenes/congrats-img-kid.png" alt="bienvenida">
+            <img class="welcome-img" src="imgs/imagenes/congrats-img-kid.png" alt="bienvenida">
 
             <!-- boton ir a la tienda vista móvil -->
             <div class="iralatienda-container-mobile">
-                <h6>¡Gracias por preferirnos!</h6>
-                <div class="iralatienda-btn">
-                    <img src="./imgs/iconos/icon-shopping.svg" alt="shopping">
-                    <h6>Ir a la tienda</h6>
-                </div>
+                <h6 class="iralatienda-title">¡Gracias por preferirnos!</h6>
+                <a href="https://mamayoquiero.com.ar/" class="boton botonProdsRecomendados"><img src="./imgs/iconos/icon-shopping-white.svg" alt="Icono de carrito de compras"> Ir a la tienda</a>
             </div>
 
         </div>
@@ -145,9 +139,10 @@
 
         <!-- Sobre nosotros -->
         <div class="nosotros-container">
-            <h2>Sobre nosotros</h2>
-            <p class="nosotros-description">Somos un emprendimiento que provee insumos, herramientas y moldes de silicona para productos de pastelería y porcelana fría en todo el país. </p>
-            <p class="nosotros-vision">Nuestro objetivo es brindar soluciones a personas que se desempeñen como reposteras, por placer o profesionalmente, y que desarrollen actividades relacionadas a las manualidades con porcelana fría, acompañándolas en este maravilloso mundo del arte y la creatividad.</p>
+            <h2 class="nosotros-title">Sobre nosotros</h2>
+            <hr class="barrita-nosotros">
+            <p class="nosotros-description">Somos un emprendimiento que provee <strong> insumos, herramientas y moldes de silicona </strong> para productos de pastelería y porcelana fría en todo el país. </p>
+            <p class="nosotros-description"><strong>Nuestro objetivo es brindar soluciones</strong>a personas que se desempeñen como reposteras, por placer o profesionalmente, y que desarrollen actividades relacionadas a las manualidades con porcelana fría, <strong>acompañándolas en este maravilloso mundo</strong> del arte y la creatividad.</p>
         </div>
 
         <!-- Testimonio de clientes -->
@@ -156,25 +151,25 @@
                 <img src="imgs/iconos/annotation-heart.svg" alt="amor">
                 <h3 class="user-name">Jessica Salas</h3>
                 <p class="testimonio-usuario">Mi experiencia fue la mejor, Pao me contestó siempre y muy bien. Me cambiaron lo que pedí mal y todo llegó a tiempo y forma, los productos lindísimos.</p>
-                <p>reseña de facebook</p>
+                <p class="card-facebook">reseña de facebook</p>
             </div>
             <div class="testimonios-card">
                 <img src="imgs/iconos/annotation-heart.svg" alt="amor">
                 <h3 class="user-name">Nadia Maza</h3>
                 <p class="testimonio-usuario">Excelentes los productos, muy buenas terminaciones en los moldes y cortantes. Sobre todo, excelente la atención al cliente...</p>
-                <p>reseña de facebook</p>
+                <p class="card-facebook">reseña de facebook</p>
             </div>
             <div class="testimonios-card">
                 <img src="imgs/iconos/annotation-heart.svg" alt="amor">
                 <h3 class="user-name">Eva Balestrieri</h3>
                 <p class="testimonio-usuario">Los mejores! Siempre compro porque son geniales. Excelente calidad... Te duran la vida entera y tienen de todo. Divinos! Sobre todo muy buena atención</p>
-                <p>reseña de facebook</p>
+                <p class="card-facebook">reseña de facebook</p>
             </div>
         </div>
 
         <!-- Suscripcion newsletter -->
         <div class="newsletter-container">
-            <img src="imgs/imagenes/newsletter-img.png" alt="suscribite">
+            <!-- <img src="imgs/imagenes/newsletter-img.png"  -->alt="suscribite">
             <h2>No te pierdas de nuestras ofertas</h2>
             <hr>
             <p>Es un buen momento para que te suscribas y recibas todas las ofertas, tutoriales y más</p>
@@ -229,7 +224,7 @@
         </section>
 
         <div class="contact-rrss">
-            <img src="imgs/imagenes/seguinosredes-img.png" alt="seguinos">
+            <!-- <img src="imgs/imagenes/seguinosredes-img.png" alt="seguinos"> -->
             <p>¡Seguinos en nuestras redes!</p>
             <hr>
             <div class="rrss-list">
@@ -257,7 +252,7 @@
     </footer>
 
 <!--     
-    <a href="https://mamayoquiero.com.ar/" class="boton botonProdsRecomendados"><img src="./imgs/iconos/icon-shopping.svg" alt="Icono de carrito de compras"> Ir a la tienda</a>
+    
     <br>
     <button class="boton botonProdsRecomendados">Ver Moldes</button>
     <br>
