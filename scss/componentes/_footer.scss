@@ -10,12 +10,6 @@
 }
 
 .footer-container{
-    .fixed{
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
     .codigoyTexto{
         display: flex;
         justify-content: center;
@@ -27,15 +21,28 @@
             display: none;
         }
     }
-    .iconoSubir{
-        display: flex;
-        justify-content: center;
-        padding: 0.5rem;
-        img{
-            cursor: pointer;
-            box-shadow: 0 0 1px rgba(0, 0, 0, 0.507);
-            border-radius: 50%;
-        }
-    }
+    
 
+}
+.iconoSubir{
+    width: 50px;
+    img{
+        cursor: pointer;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.507);
+        border-radius: 50%;
+    }
+}
+.fixed{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.fixed2{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 calc(50% - 20px);
+    margin-bottom: 3.5rem;
 }

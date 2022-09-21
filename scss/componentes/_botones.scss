@@ -23,10 +23,11 @@
 }   
 .botonDescuentoClickeado{
     @include latoReg13; 
+    padding: 0.5rem 0;
     background-color: $botonRojo;
     color: $blanco;
     font-weight: bold;
-    width: 280px;
+    width: 300px;
     height: 48px;
 }
 /* botones descuentos Fijo bottom */

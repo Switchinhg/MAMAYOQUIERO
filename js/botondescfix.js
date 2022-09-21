@@ -1,5 +1,7 @@
 let botonRojo = document.getElementById("botonCopiarRojo");
+let botonCopiar = document.getElementsByClassName("desc-code-boton")[0];
 let footer = document.getElementsByClassName("footer-container")[0];
+
 const select = document.getElementById("select");
 //traidos de HTML
 let iconoSubir = document.getElementById('clickarriba')
@@ -9,6 +11,13 @@ iconoSubir.addEventListener('click', () =>{
     window.scrollTo(0, 0)
 })
 
+botonCopiar.addEventListener('click', () =>{
+    botonCopiar.innerHTML = `<button class="boton botonDescuentoClickeado"><img src="./imgs/iconos/IconCheckBlanco.svg" alt="Icono de texto copiado"> Código de descuento copiado</button>`
+    ClipboardJS.copy('MAMAYOQUIERO')
+    setTimeout(() => {
+        botonCopiar.innerHTML =   `<button class="boton botonDescuento"><img src="./imgs/iconos/IconCopyNegro.svg" alt="Icono de copiar texto"> <span> Cod. 10% descuento <b>MAMAYOQUIERO</b></span></button>`  
+    }, 2000);
+})
 botonRojo.addEventListener('click', () =>{
     botonRojo.innerHTML = `<button id="select" class="boton botonDescuentoClickeadoFijo"><img src="./imgs/iconos/IconCheckNegro.svg" alt="icono de copiar texto"> Código de descuento copiado</button>`
     ClipboardJS.copy('MAMAYOQUIERO')
@@ -22,8 +31,11 @@ window.onscroll = function(){scrollFixed()}
 function scrollFixed(){
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         footer.classList.add("fixed")
+        iconoSubir.classList.add('fixed2')
+
     } else {
         footer.classList.remove("fixed")
+        iconoSubir.classList.remove('fixed2')
     }
 }
 

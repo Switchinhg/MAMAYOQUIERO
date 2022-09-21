@@ -34,10 +34,11 @@ main {
 
 .botonDescuentoClickeado {
   font-size: 13px;
+  padding: 0.5rem 0;
   background-color: #880935;
   color: #FFFFFF;
   font-weight: bold;
-  width: 280px;
+  width: 300px;
   height: 48px; }
 
 /* botones descuentos Fijo bottom */
@@ -496,12 +497,6 @@ main {
     width: 200px;
     /* height: 72px; */ }
 
-.footer-container .fixed {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0; }
-
 .footer-container .codigoyTexto {
   display: flex;
   justify-content: center;
@@ -512,14 +507,26 @@ main {
   .footer-container .codigoyTexto p {
     display: none; }
 
-.footer-container .iconoSubir {
-  display: flex;
-  justify-content: center;
-  padding: 0.5rem; }
-  .footer-container .iconoSubir img {
+.iconoSubir {
+  width: 50px; }
+  .iconoSubir img {
     cursor: pointer;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.507);
     border-radius: 50%; }
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.fixed2 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 calc(50% - 20px);
+  margin-bottom: 3.5rem; }
 
 @media only screen and (max-width: 768px) {
   /* Preguntas Frecuentes */
