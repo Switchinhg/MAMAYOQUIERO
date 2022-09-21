@@ -2,13 +2,21 @@
 @mixin latoReg13{
     font-size:13px;
 }
-
 @mixin latoBold12{
     font-weight: bold;
     font-size: 12px;
 }
+@mixin latoReg14{
+    font-size: 14px;
+    font-weight: normal;
+}
 @mixin latoReg16{
     font-size: 16px;
+    font-weight: normal;
+}
+@mixin latoItalic12{
+    font-style: italic;
+    font-size: 12px;
 }
 @mixin latoItalic20{
     font-style: italic;
@@ -17,8 +25,12 @@
 @mixin latoReg20{
     font-size: 20px;
 }
+@mixin latoBold16{
+    font-weight: 600;
+    font-size: 20px;
+}
 @mixin latoBold20{
-    font-weight: bold;
+    font-weight: 600;
     font-size: 20px;
 }
 @mixin latoReg24{
@@ -44,14 +56,18 @@
     font-weight: 900;
     font-size: 48px;
 }
+@mixin latoBlack40{
+    font-weight: 900;
+    font-size: 40px;
+}
 @mixin latoBlack64{
     font-weight: 900;
     font-size: 64px;
 }
-@mixin barrita($width) {
+@mixin barrita($width, $height) {
     color:$separadores;
     background-color: $separadores;
-    height: 3px;
+    height: $height;
     border: none;
     border-radius: 10px;
     width:$width;

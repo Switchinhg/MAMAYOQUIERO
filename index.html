@@ -15,42 +15,42 @@
     <title>Mamá yo quiero</title>
 </head>
 <body class="gradiente">
-    <header>
+    <header class="header">
         <!-- Logo marca -->
-        <a href="index.html"><img src="./imgs/logo/logo-mamayoquiero.png" alt="mama yo quiero"></a>
+        <a class="logo" href="index.html"><img class="nav-logo" src="./imgs/logo/logo-mamayoquiero.png" alt="mama yo quiero"></a>
         
-        <!-- Navbar MOBILE -->
-        <div class="nav-mobile">
-            <!-- boton hamburguesa -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ThreeLineHorizontal"><path d="M5 6h14M5 12h14M5 18h14"/></svg>
-            <!-- menu desplegable -->
-            <div class="nav-mobile-collapsible">
-                <!-- Titulo y close btn -->
-                <div class="nav-mobile-title-container">
-                    <h2 class="nav-mobile-title">Menú</h2>
-                    <img class="" src="./imgs/iconos/icon-x-close.svg" alt="close">
+        <!-- boton hamburguesa -->
+        <svg id="btn-burger" class="btn-burger" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ThreeLineHorizontal"><path d="M5 6h14M5 12h14M5 18h14"/></svg>
+
+        <!-- Navbar Desplegable -->
+        <div class="nav-mobile-collapsible-close" id="collapsible-menu">
+            <!-- Titulo y close btn -->
+            <div class="nav-mobile-title-container">
+                <h2 class="nav-mobile-title">Menú</h2>
+                <img id="btn-nav-close" class="btn-nav-close" src="./imgs/iconos/icon-x-close.svg" alt="close">
+            </div>
+            <hr class="barrita-header">
+            <!-- links -->
+            <div class="nav-mobile-menu">
+                <div class="nav-link-container">
+                    <img src="./imgs/iconos/icon-shopping.svg" alt="shopping">
+                    <a href="#" class="mobile-links">Tienda</a>
                 </div>
-                <!-- links internos -->
-                <div class="nav-mobile-menu">
-                    <div>
-                        <img src="./imgs/iconos/icon-shopping.svg" alt="shopping">
-                        <a href="#" class="mobile-links">Tienda</a>
-                    </div>
-                    <div>
-                        <img src="./imgs/iconos/message-dots-square.svg" alt="mensaje">
-                        <a href="#" class="mobile-links">Nosotros</a>
-                    </div>
-                    <div>
-                        <img src="./imgs/iconos/help-circle.svg" alt="ayuda">
-                        <a href="#" class="mobile-links">Ayuda</a>
-                    </div>
+                <div class="nav-link-container">
+                    <img src="./imgs/iconos/message-dots-square.svg" alt="mensaje">
+                    <a href="#" class="mobile-links">Nosotros</a>
                 </div>
-                <!-- Contenedor iconos rrss -->
-                <div class="nav-mobile-rrss-container">
-                    <i class="fa-brands fa-square-pinterest"></i>
-                    <i class="ai-instagram-fill"></i>
-                    <i class="fa-brands fa-square-facebook"></i>
+                <div class="nav-link-container">
+                    <img src="./imgs/iconos/help-circle.svg" alt="ayuda">
+                    <a href="#" class="mobile-links">Ayuda</a>
                 </div>
+            </div>
+            <hr class="barrita-header">
+            <!-- Contenedor iconos rrss -->
+            <div class="nav-mobile-rrss-container">
+                <a href="https://www.facebook.com/Mama-Yo-Quiero-Moldes-de-Silicona-e-Insumos-257171107644876/"><img src="./imgs/iconos/ico-rrss-facebook.svg" alt="facebook"></a> 
+                <a href="https://www.instagram.com/mamayoquiero.ar/"><img class="nav-ico-instagram" src="./imgs/iconos/ico-rrss-instagram.svg" alt="instagram"></a>
+                <a href="https://ar.pinterest.com/mamayoquiero/_created/"><img src="./imgs/iconos/ico-rrss-pinterest.svg" alt="pinterest"></a>
             </div>
         </div>
 
@@ -69,34 +69,28 @@
 
             <div class="welcome-description">
                 <h2 class="welcome-title">¡Felicitaciones!</h2>
-                <p class="welcome-img">Te ganaste un 10% OFF en tu próxima compra usando el cúpon <strong>MAMAYOQUIERO</strong></p>
-                <p>Copia y pega el código antes de finalizar con la compra y disfruta de tu beneficio</p>
+                <p class="welcome-text">Te ganaste un 10% OFF en tu próxima compra usando el cúpon <strong>MAMAYOQUIERO</strong></p>
             </div>
-
+            
             <!-- contenedor copiar código descuento MAMAYOQUIERO -->
             <div class="desc-code-container"><!-- -script- copy to clipboard (https://blog.saeloun.com/2022/06/09/copying-texts-to-clipboard-using-javascript) -->
-                <!-- btn copiar -->
-                <img src="imgs/iconos/IconCopyNegro.svg" alt="copiar al portapapeles">
-                <!-- descripción copiar descuento -->
-                <p>Cod. 10% descuento MAMAYOQUIERO</p>
+                <button class="boton botonDescuento"><img src="./imgs/iconos/IconCopyNegro.svg" alt="Icono de copiar texto"> <span> Cod. 10% descuento <b>MAMAYOQUIERO</b></span></button>
+                <p class="code-info">Copia y pega el código antes de finalizar con la compra y disfruta de tu beneficio</p>
             </div>
+            
             
             <!-- botón ir a la tienda vista desktop -->
             <div class="iralatienda-btn-desktop">
-                <img src="./imgs/iconos/icon-shopping.svg" alt="shopping">
-                <h6>Ir a la tienda</h6>
+                <a href="https://mamayoquiero.com.ar/" class="boton botonProdsRecomendados"><img src="./imgs/iconos/icon-shopping-white.svg" alt="Icono de carrito de compras"> Ir a la tienda</a>
             </div>
 
             <!-- Imagen presentación, nena -->
-            <img src="imgs/imagenes/congrats-img-kid.png" alt="bienvenida">
+            <img class="welcome-img" src="imgs/imagenes/congrats-img-kid.png" alt="bienvenida">
 
             <!-- boton ir a la tienda vista móvil -->
             <div class="iralatienda-container-mobile">
-                <h6>¡Gracias por preferirnos!</h6>
-                <div class="iralatienda-btn">
-                    <img src="./imgs/iconos/icon-shopping.svg" alt="shopping">
-                    <h6>Ir a la tienda</h6>
-                </div>
+                <h6 class="iralatienda-title">¡Gracias por preferirnos!</h6>
+                <a href="https://mamayoquiero.com.ar/" class="boton botonProdsRecomendados"><img src="./imgs/iconos/icon-shopping-white.svg" alt="Icono de carrito de compras"> Ir a la tienda</a>
             </div>
 
         </div>
@@ -145,9 +139,10 @@
 
         <!-- Sobre nosotros -->
         <div class="nosotros-container">
-            <h2>Sobre nosotros</h2>
-            <p class="nosotros-description">Somos un emprendimiento que provee insumos, herramientas y moldes de silicona para productos de pastelería y porcelana fría en todo el país. </p>
-            <p class="nosotros-vision">Nuestro objetivo es brindar soluciones a personas que se desempeñen como reposteras, por placer o profesionalmente, y que desarrollen actividades relacionadas a las manualidades con porcelana fría, acompañándolas en este maravilloso mundo del arte y la creatividad.</p>
+            <h2 class="nosotros-title">Sobre nosotros</h2>
+            <hr class="barrita-nosotros">
+            <p class="nosotros-description">Somos un emprendimiento que provee <strong> insumos, herramientas y moldes de silicona </strong> para productos de pastelería y porcelana fría en todo el país. </p>
+            <p class="nosotros-description"><strong>Nuestro objetivo es brindar soluciones</strong>a personas que se desempeñen como reposteras, por placer o profesionalmente, y que desarrollen actividades relacionadas a las manualidades con porcelana fría, <strong>acompañándolas en este maravilloso mundo</strong> del arte y la creatividad.</p>
         </div>
 
         <!-- Testimonio de clientes -->
@@ -156,25 +151,25 @@
                 <img src="imgs/iconos/annotation-heart.svg" alt="amor">
                 <h3 class="user-name">Jessica Salas</h3>
                 <p class="testimonio-usuario">Mi experiencia fue la mejor, Pao me contestó siempre y muy bien. Me cambiaron lo que pedí mal y todo llegó a tiempo y forma, los productos lindísimos.</p>
-                <p>reseña de facebook</p>
+                <p class="card-facebook">reseña de facebook</p>
             </div>
             <div class="testimonios-card">
                 <img src="imgs/iconos/annotation-heart.svg" alt="amor">
                 <h3 class="user-name">Nadia Maza</h3>
                 <p class="testimonio-usuario">Excelentes los productos, muy buenas terminaciones en los moldes y cortantes. Sobre todo, excelente la atención al cliente...</p>
-                <p>reseña de facebook</p>
+                <p class="card-facebook">reseña de facebook</p>
             </div>
             <div class="testimonios-card">
                 <img src="imgs/iconos/annotation-heart.svg" alt="amor">
                 <h3 class="user-name">Eva Balestrieri</h3>
                 <p class="testimonio-usuario">Los mejores! Siempre compro porque son geniales. Excelente calidad... Te duran la vida entera y tienen de todo. Divinos! Sobre todo muy buena atención</p>
-                <p>reseña de facebook</p>
+                <p class="card-facebook">reseña de facebook</p>
             </div>
         </div>
 
         <!-- Suscripcion newsletter -->
         <div class="newsletter-container">
-            <img src="imgs/imagenes/newsletter-img.png" alt="suscribite">
+            <!-- <img src="imgs/imagenes/newsletter-img.png"  -->alt="suscribite">
             <h2>No te pierdas de nuestras ofertas</h2>
             <hr>
             <p>Es un buen momento para que te suscribas y recibas todas las ofertas, tutoriales y más</p>
@@ -229,7 +224,7 @@
         </section>
 
         <div class="contact-rrss">
-            <img src="imgs/imagenes/seguinosredes-img.png" alt="seguinos">
+            <!-- <img src="imgs/imagenes/seguinosredes-img.png" alt="seguinos"> -->
             <p>¡Seguinos en nuestras redes!</p>
             <hr>
             <div class="rrss-list">
@@ -257,7 +252,7 @@
     </footer>
 
 <!--     
-    <a href="https://mamayoquiero.com.ar/" class="boton botonProdsRecomendados"><img src="./imgs/iconos/icon-shopping.svg" alt="Icono de carrito de compras"> Ir a la tienda</a>
+    
     <br>
     <button class="boton botonProdsRecomendados">Ver Moldes</button>
     <br>
@@ -273,7 +268,8 @@
     Rojo
     <button class="boton botonDescuentoFijo"><img src="./imgs/iconos/IconCopyBlanco.svg" alt="icono de copiar texto"> <span> Cod. 10% descuento <b>MAMAYOQUIERO</b></span></button>
     <br>
-    <button class="boton botonDescuentoClickeadoFijo"><img src="./imgs/iconos/IconCheckNegro.svg" alt="icono de copiar texto"> Código de descuento copiado</button> -->
+    <button class="boton botonDescuentoClickeadoFijo"><img src="./imgs/iconos/IconCheckNegro.svg" alt="icono de copiar texto"> Código de descuento copiado</button> 
+-->
 
 
 </body>

@@ -1,0 +1,17 @@
+.nosotros-container{
+    padding: 2rem;
+    .nosotros-title{
+        @include latoBlack32;
+    }
+    .barrita-nosotros{
+        margin-top: 1rem;
+        margin-bottom: -.5rem;
+        @include barrita(130px, 2px);
+    }
+    .nosotros-description{
+        @include latoReg16;
+        line-height: 24px;
+        margin-top: 1rem;
+        width: 280px;
+    }
+}

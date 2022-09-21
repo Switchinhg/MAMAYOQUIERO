@@ -8,12 +8,15 @@
     background-color: $botonRojo;
     width: 212px;
     height: 56px;
+    img{
+        width: 28px;
+    }
 }
 /* Botones Descuentos */
 .botonDescuento{
     @include latoReg13;
     padding: 0.5rem 0;
-    width: 280px;
+    width: 300px;
     height: 48px;
     color:$textos;
     background-color: $blanco;
@@ -44,9 +47,8 @@
 }
 
 .barritaProd{
-    @include barrita(98px);
+    @include barrita(98px, 3px);
 }
-
 /* Boton */
 .boton{
     display: flex;

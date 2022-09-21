@@ -1,20 +1,25 @@
 {
   "name": "mamayoquiero",
   "version": "1.0.0",
-  "description": "landing de mama yo quiero",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/main.scss estilos/estilos.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "teamCoder",
-  "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^7.0.1",
-    "nodemon": "^2.0.19"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidResca/MAMAYOQUIERO.git"
   },
-  "dependencies": {
-    "clipboard": "^2.0.11"
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidResca/MAMAYOQUIERO/issues"
+  },
+  "homepage": "https://github.com/davidResca/MAMAYOQUIERO#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
   }
 }

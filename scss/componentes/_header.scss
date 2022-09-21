@@ -1,0 +1,106 @@
+.header{
+    position: relative;
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: $fondoLanding;
+    .logo{
+        width: 76px;
+        height: 41px;
+        .nav-logo{
+            width: 76px;
+        }
+    }
+    .btn-burger{
+        width: 30px;
+    }
+}
+
+.nav-mobile-collapsible-close{
+    padding: 1rem 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 337px;
+    background-color: $fondoLanding;
+
+    transform: translateY(-100%);
+    transition: .2s ease-in;
+
+    .nav-mobile-title-container{
+        position: relative;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        padding-top: .8rem;
+        .nav-mobile-title{
+            @include latoReg20;
+            font-weight: normal;
+        }
+        .btn-nav-close{
+            position: absolute;
+            right: 15px;
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .barrita-header{
+        @include barrita(100%, 1px);
+        
+    }
+    .nav-mobile-menu{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        .nav-link-container{
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            margin: 10px 0;
+            img{
+                padding-top: 3px;
+            }
+            a {
+                @include latoReg20;
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+    .nav-mobile-rrss-container{
+        display: flex;
+        align-content: center;
+        gap: 1rem;
+        a{
+            width: 40px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            img{
+                width: 1.3rem;
+            }
+            .nav-ico-instagram{
+                width: 1.5rem;
+            }
+        }
+    }
+}
+
+.nav-open{
+    transform: translateY(0);
+}
+.nav-desktop{
+    display: none;
+}
+
