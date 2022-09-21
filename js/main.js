@@ -63,7 +63,6 @@ for(let i = 0 ;i< acordion.length; i++ ){
         }
 
         icons[i].src = acordion[i].nextElementSibling.classList.contains('activo') ? "./imgs/imagenes/chevronDown.png" : "./imgs/imagenes/chevronRight.png";
-        acordion[i].nextElementSibling.classList.contains('activo')? icons[i].style.height = '18px' : icons[i].style.height = '30px'
     })
 }
 
