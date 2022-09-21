@@ -1,14 +1,16 @@
 
 @media only screen and (max-width: 768px) {
     /* Preguntas Frecuentes */
-    .acordion{
-        @include latoBold12;
-    }
-    .codigoyTexto{
-        justify-content: center;
+    
+    /* .codigoyTexto{
+        justify-content: space-around;
         p{
             display: none;
         }
+    } */
+    /* 
+    .acordion{
+        @include latoBold12;
     }
     .panel {
         padding: 1rem ;
@@ -17,14 +19,15 @@
             @include latoReg13;
         }
     }
-    /* Productos Destacados */
     .pregTitulo{
         @include latoBlack32;
         align-items: flex-start;
 
     }
+    // Productos Destacados 
+
     .prodsWrap{
-        flex-direction: column;
+        
         gap: 0;
         background-color: $blanco;
         border-radius: 20px;
@@ -32,13 +35,13 @@
     .infoWrap{
         width: auto;
         align-items: center;
-        padding: 1rem;
+        padding: 0 1rem 1rem 1rem;
     }
     .invert{
         flex-direction: column;
     }
     .prodsTitulo{
-        @include latoBlack32;
+        
     }
     .textoProdsR{
         line-height: 1rem;
@@ -55,7 +58,7 @@
     .barritaProd{
         @include barrita(160px, 3px);
     }
-
+ */
 }
 
 /* animacion */
