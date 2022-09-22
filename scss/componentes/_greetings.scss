@@ -7,18 +7,18 @@
     gap: .8rem;
     text-align: center;
     color: $textos;
-
     @media only screen and (min-width: 768px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 0.8fr 0.8fr;
         gap: 0;
-
     }
     @media only screen and (min-width: 1224px) {
-        
+        grid-template-rows: 50px 1fr 0.8fr 0.8fr;
+        width: 75vw;
+        margin: 1rem auto;
+        column-gap: 3rem;
     }
-
 }
 
 .welcome-description{
@@ -32,10 +32,14 @@
         align-self: flex-end;
         justify-self: center;
     }   
+    @media only screen and (min-width: 1224px) {
+        grid-row: 2 / 3;
+    }
     .welcome-title{
         @include latoBlack40; 
-        @media only screen and (min-width: 768px) {
-        }   
+        @media only screen and (min-width: 1224px) {
+            @include latoBlack64; 
+        }
     }
     .welcome-text{
         @include latoReg16;
@@ -46,6 +50,12 @@
             margin-top: 5px;
             width: 315px;
             line-height: 0.9rem;
+        }
+        @media only screen and (min-width: 1224px) {
+            @include latoReg24;
+            width: 472px;
+            letter-spacing: -1px; 
+            line-height: 1.2rem;
         } 
     }
 }    
@@ -55,14 +65,28 @@
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    .code-info{
-        @include latoReg13;
-        width: 228px;
-    }
     @media only screen and (min-width: 768px) {
         grid-row:  2 / 3;
         grid-column:  2 / 3;
-        
+        align-self: flex-start;
+        padding-top: .9rem;
+    }
+    @media only screen and (min-width: 1224px) {
+        grid-row:  3 / 4;
+    }
+    .code-info{
+        @include latoReg13;
+        width: 228px;
+        @media only screen and (min-width: 768px) {
+            @include latoReg16;
+            width: 300px;
+        }
+    }
+    .botonDescuento{
+        @media only screen and (min-width: 1224px) {
+            width: 350px;
+            height: 40px;
+        }
     }
 }
 
@@ -88,15 +112,28 @@
         padding-top: 5px;
         grid-row:  3 / 4;
         grid-column:  2 / 3;
-
-        /* Boton */
-        .botonProdsRecomendados{
+    }
+    @media only screen and (min-width: 1224px) {
+        grid-row:  4 / 5;
+        align-self: flex-start;
+    }
+    /* Boton */
+    .botonProdsRecomendados{
+        font-weight: normal;
+        width: 200px;
+        height: 50px;
+        @media only screen and (min-width: 1224px) {
+            @include latoReg20;
             font-weight: normal;
             width: 200px;
-            height: 50px;
-
-        }
-    } 
+            height: 45px;
+            color:$blanco;
+            background-color: $botonRojo;
+            img{
+                width: 25px;
+            }
+        } 
+    }
 }
 
 .welcome-img{
@@ -109,7 +146,8 @@
         justify-self: center;
     }
     @media only screen and (min-width: 1224px) {
-        width: 431px;
+        grid-row: 1 / 5;
+        width: 432px;
     }
 }
 

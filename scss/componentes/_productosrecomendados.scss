@@ -7,6 +7,10 @@
         justify-content: start;
         overflow: hidden;
     } 
+    @media only screen and (min-width: 768px) {
+        justify-content: center;
+        overflow: hidden;
+    } 
     .prodsRecWrap{
         background-color: rgba(255, 255, 255, 0);
         border-radius: 20px;
@@ -22,6 +26,15 @@
             gap: 1.5rem;
             overflow-x: scroll;
         } 
+        @media only screen and (min-width: 1224px) {
+            flex-direction: row;
+            gap: 0;
+            overflow: hidden;
+            border-radius: 25px;
+            background-color: $blanco;
+            flex-direction: column;
+            padding: 2.5rem 3rem;
+        } 
         .prodsWrap{
             display: flex;
             flex-direction: column;
@@ -35,9 +48,29 @@
                 min-width: 350px;
                 box-shadow: 8px 8px 14px rgba(75, 74, 74, 0.2);
             } 
+            @media only screen and (min-width: 1224px) {
+                min-width: 350px;
+                border-radius: 0;
+                box-shadow: none;
+                background-color: transparent;
+                flex-direction: row;
+                gap: 4rem;
+                
+            } 
+            .botonProdsRecomendados{
+                @media only screen and (min-width: 1224px) {
+                    align-self: flex-start;
+                    height: 40px;
+                    width: 175px;
+                    margin-top: 15px;
+                }
+            }
             div{
                 .prodsImg{
                     width: 216px;
+                    @media only screen and (min-width: 1224px) {
+                        width: 400px;
+                    }
                 }
             }
             .infoWrap{
@@ -47,25 +80,48 @@
                 padding:0 0.19rem 1rem 0.18rem;
                 flex-direction: column;
                 gap: 1rem;
+                @media only screen and (min-width: 1224px) {
+                    max-width: 448px;
+                    gap: .6rem;
+                }
                 .prodsTitulo{
                     @include latoBlack32;
                     text-align: center;
+                    @media only screen and (min-width: 1224px) {
+                        @include latoBlack48;
+                        text-align: start;
+                        width: 448px;
+                        padding-left: 2px;
+                    }
                 }
                 .textoProdsR{
                     line-height: 1rem;
                     text-align: center;
-                    @include latoReg16
+                    @include latoReg16;
+                    @media only screen and (min-width: 1224px) {
+                        @include latoReg24;
+                        width: 448px;
+                        text-align: start;
+                        padding-left: 4px;
+                        line-height: 1.5rem;
+                    }
                 }
                 .barritaProd{
                     @include barrita(160px, 3px);
+                    @media only screen and (min-width: 1224px) {
+                        @include barrita(110px, 3px);
+                        align-self: flex-start;
+                    }
                 }
             }
             
         }
         .invert{
             flex-direction: column;
+            @media only screen and (min-width: 1224px) {
+                flex-direction: row-reverse;
+            }
         }
-        
     }
 }
 

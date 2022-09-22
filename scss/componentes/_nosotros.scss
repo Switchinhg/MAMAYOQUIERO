@@ -11,6 +11,9 @@
         @media only screen and (min-width: 768px) {
             @include latoBlack40;
         } 
+        @media only screen and (min-width: 1224px) {
+            @include latoBlack48;
+        }
     }
     .barrita-nosotros{
         margin-top: 1rem;
@@ -31,6 +34,9 @@
             text-align: center;
             width: 720px;
             @include latoReg20;
+        }
+        @media only screen and (min-width: 1224px) {
+            @include latoReg24;
         } 
     }
 }

@@ -1,42 +1,52 @@
-.newsletter-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .5rem;
-    @media only screen and (min-width: 768px) {
-        margin-bottom: -1.5rem;
-    } 
-    .newsletter-img {
-        width: 232px;
+.madmax-container{
+    @media only screen and (min-width: 1224px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .newsletter-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
         @media only screen and (min-width: 768px) {
-            width:350px ;
-            margin-top: 1rem;
-
+            margin-bottom: -1.5rem;
+        } 
+        @media only screen and (min-width: 1224px) {
+            /* flex-direction: row; */ 
+        }
+        .newsletter-img {
+            width: 232px;
+            @media only screen and (min-width: 768px) {
+                width:350px ;
+                margin-top: 1rem;
+            } 
+        }
+        .newsletter-title{
+            @include latoBlack32;
+            text-align: center;
+            @media only screen and (min-width: 768px) {
+                margin-top: 1rem;
+                @include latoBlack40;
+            } 
+        }
+        .barrita-newsletter{
+            @include barrita(180px, .1rem);
+            @media only screen and (min-width: 768px) {
+                justify-self: center;
+                @include barrita (200px , 3px)
+            } 
+        }
+        .newsletter-text{
+            @include latoReg14;
+            text-align: center;
+            width: 288px;
+            @media only screen and (min-width: 768px) {
+                @include latoReg20;
+            } 
         } 
     }
-    .newsletter-title{
-        @include latoBlack32;
-        text-align: center;
-        @media only screen and (min-width: 768px) {
-            margin-top: 1rem;
-            @include latoBlack40;
-        } 
-    }
-    .barrita-newsletter{
-        @include barrita(180px, .1rem);
-        @media only screen and (min-width: 768px) {
-            justify-self: center;
-            @include barrita (200px , 3px)
-        } 
-    }
-    .newsletter-text{
-        @include latoReg14;
-        text-align: center;
-        width: 288px;
-        @media only screen and (min-width: 768px) {
-            @include latoReg20;
-        } 
-    } 
 }
 
 
