@@ -3,6 +3,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media only screen and (min-width: 768px) {
+        justify-content: start;
+        overflow: hidden;
+    } 
     .prodsRecWrap{
         background-color: rgba(255, 255, 255, 0);
         border-radius: 20px;
@@ -11,8 +15,13 @@
         gap: 1rem;
         padding:1rem 0;
         margin: 1rem;
-        width: 328px;
         min-width: 328px;
+        @media only screen and (min-width: 768px) {
+            flex-direction: row;
+            
+            gap: 1.5rem;
+            overflow-x: scroll;
+        } 
         .prodsWrap{
             display: flex;
             flex-direction: column;
@@ -22,6 +31,10 @@
             background-color: $blanco;
             border-radius: 20px;
             padding: 1rem;
+            @media only screen and (min-width: 768px) {
+                min-width: 350px;
+                box-shadow: 8px 8px 14px rgba(75, 74, 74, 0.2);
+            } 
             div{
                 .prodsImg{
                     width: 216px;
@@ -47,10 +60,12 @@
                     @include barrita(160px, 3px);
                 }
             }
+            
         }
         .invert{
             flex-direction: column;
         }
+        
     }
 }
 

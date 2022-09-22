@@ -7,20 +7,46 @@
     gap: .8rem;
     text-align: center;
     color: $textos;
+
+    @media only screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.8fr 0.8fr;
+        gap: 0;
+
+    }
+    @media only screen and (min-width: 1224px) {
+        
+    }
+
 }
 
 .welcome-description{
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media only screen and (min-width: 768px) {
+        width: 315px;
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        align-self: flex-end;
+        justify-self: center;
+    }   
     .welcome-title{
-        @include latoBlack40;
+        @include latoBlack40; 
+        @media only screen and (min-width: 768px) {
+        }   
     }
     .welcome-text{
+        @include latoReg16;
         margin-top: 10px;
         width: 201px;
         text-align: center;
-        @include latoReg16;
+        @media only screen and (min-width: 768px) {
+            margin-top: 5px;
+            width: 315px;
+            line-height: 0.9rem;
+        } 
     }
 }    
 
@@ -33,6 +59,11 @@
         @include latoReg13;
         width: 228px;
     }
+    @media only screen and (min-width: 768px) {
+        grid-row:  2 / 3;
+        grid-column:  2 / 3;
+        
+    }
 }
 
 .iralatienda-container-mobile{
@@ -43,12 +74,42 @@
     .iralatienda-title{
         @include latoReg20;
     }
+    @media only screen and (min-width: 768px) {
+        display: none;
+    } 
 }
 
 .iralatienda-btn-desktop{
     display: none;
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        justify-self: center;
+        align-self: flex-start;
+        padding-top: 5px;
+        grid-row:  3 / 4;
+        grid-column:  2 / 3;
+
+        /* Boton */
+        .botonProdsRecomendados{
+            font-weight: normal;
+            width: 200px;
+            height: 50px;
+
+        }
+    } 
 }
 
 .welcome-img{
     width: 237px;
+
+    @media only screen and (min-width: 768px) {
+        grid-row: 1 / 4;
+        grid-column: 1 / 2;
+        width:350px ;
+        justify-self: center;
+    }
+    @media only screen and (min-width: 1224px) {
+        width: 431px;
+    }
 }
+

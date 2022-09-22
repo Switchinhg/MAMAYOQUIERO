@@ -236,20 +236,38 @@ main {
   gap: .8rem;
   text-align: center;
   color: #242424; }
+  @media only screen and (min-width: 768px) {
+    .welcome-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 0.8fr 0.8fr;
+      gap: 0; } }
 
 .welcome-description {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media only screen and (min-width: 768px) {
+    .welcome-description {
+      width: 315px;
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+      align-self: flex-end;
+      justify-self: center; } }
   .welcome-description .welcome-title {
     font-weight: 900;
     font-size: 40px; }
   .welcome-description .welcome-text {
+    font-size: 16px;
+    font-weight: normal;
     margin-top: 10px;
     width: 201px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: normal; }
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .welcome-description .welcome-text {
+        margin-top: 5px;
+        width: 315px;
+        line-height: 0.9rem; } }
 
 .desc-code-container {
   display: flex;
@@ -259,6 +277,10 @@ main {
   .desc-code-container .code-info {
     font-size: 13px;
     width: 228px; }
+  @media only screen and (min-width: 768px) {
+    .desc-code-container {
+      grid-row: 2 / 3;
+      grid-column: 2 / 3; } }
 
 .iralatienda-container-mobile {
   display: flex;
@@ -267,17 +289,46 @@ main {
   align-items: center; }
   .iralatienda-container-mobile .iralatienda-title {
     font-size: 20px; }
+  @media only screen and (min-width: 768px) {
+    .iralatienda-container-mobile {
+      display: none; } }
 
 .iralatienda-btn-desktop {
   display: none; }
+  @media only screen and (min-width: 768px) {
+    .iralatienda-btn-desktop {
+      display: flex;
+      justify-self: center;
+      align-self: flex-start;
+      padding-top: 5px;
+      grid-row: 3 / 4;
+      grid-column: 2 / 3;
+      /* Boton */ }
+      .iralatienda-btn-desktop .botonProdsRecomendados {
+        font-weight: normal;
+        width: 200px;
+        height: 50px; } }
 
 .welcome-img {
   width: 237px; }
+  @media only screen and (min-width: 768px) {
+    .welcome-img {
+      grid-row: 1 / 4;
+      grid-column: 1 / 2;
+      width: 350px;
+      justify-self: center; } }
+  @media only screen and (min-width: 1224px) {
+    .welcome-img {
+      width: 431px; } }
 
 .productos-rec-container {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (min-width: 768px) {
+    .productos-rec-container {
+      justify-content: start;
+      overflow: hidden; } }
   .productos-rec-container .prodsRecWrap {
     background-color: rgba(255, 255, 255, 0);
     border-radius: 20px;
@@ -286,8 +337,12 @@ main {
     gap: 1rem;
     padding: 1rem 0;
     margin: 1rem;
-    width: 328px;
     min-width: 328px; }
+    @media only screen and (min-width: 768px) {
+      .productos-rec-container .prodsRecWrap {
+        flex-direction: row;
+        gap: 1.5rem;
+        overflow-x: scroll; } }
     .productos-rec-container .prodsRecWrap .prodsWrap {
       display: flex;
       flex-direction: column;
@@ -297,6 +352,10 @@ main {
       background-color: #FFFFFF;
       border-radius: 20px;
       padding: 1rem; }
+      @media only screen and (min-width: 768px) {
+        .productos-rec-container .prodsRecWrap .prodsWrap {
+          min-width: 350px;
+          box-shadow: 8px 8px 14px rgba(75, 74, 74, 0.2); } }
       .productos-rec-container .prodsRecWrap .prodsWrap div .prodsImg {
         width: 216px; }
       .productos-rec-container .prodsRecWrap .prodsWrap .infoWrap {
@@ -327,9 +386,18 @@ main {
 
 .nosotros-container {
   padding: 2rem; }
+  @media only screen and (min-width: 768px) {
+    .nosotros-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
   .nosotros-container .nosotros-title {
     font-weight: 900;
     font-size: 32px; }
+    @media only screen and (min-width: 768px) {
+      .nosotros-container .nosotros-title {
+        font-weight: 900;
+        font-size: 40px; } }
   .nosotros-container .barrita-nosotros {
     margin-top: 1rem;
     margin-bottom: -.5rem;
@@ -339,12 +407,27 @@ main {
     border: none;
     border-radius: 10px;
     width: 130px; }
+    @media only screen and (min-width: 768px) {
+      .nosotros-container .barrita-nosotros {
+        margin-top: 0.8rem;
+        margin-bottom: -.2rem;
+        color: #F088AF;
+        background-color: #F088AF;
+        height: 3px;
+        border: none;
+        border-radius: 10px;
+        width: 200px; } }
   .nosotros-container .nosotros-description {
     font-size: 16px;
     font-weight: normal;
     line-height: 24px;
     margin-top: 1rem;
     width: 280px; }
+    @media only screen and (min-width: 768px) {
+      .nosotros-container .nosotros-description {
+        text-align: center;
+        width: 720px;
+        font-size: 20px; } }
 
 .testimonios-container {
   padding: 1rem;
@@ -404,6 +487,9 @@ main {
       gap: 1rem;
       margin-bottom: 1rem;
       line-height: 1.3rem; }
+      @media only screen and (min-width: 768px) {
+        .faq-container .contenedorInner .pregTitulo {
+          align-items: center; } }
       .faq-container .contenedorInner .pregTitulo .barritaProdpf {
         color: #F088AF;
         background-color: #F088AF;
@@ -428,6 +514,12 @@ main {
       border-bottom: solid 2px #FFE1EC;
       text-align: start;
       font-weight: 600; }
+      @media only screen and (min-width: 768px) {
+        .faq-container .contenedorInner .acordion {
+          font-weight: 600;
+          font-size: 20px;
+          font-weight: normal;
+          gap: .5rem; } }
     .faq-container .contenedorInner .border {
       border-radius: 20px 20px 0 0; }
     .faq-container .contenedorInner .panel {
@@ -439,27 +531,47 @@ main {
       border-left: solid 4px #F088AF; }
       .faq-container .contenedorInner .panel p {
         font-size: 13px; }
+        @media only screen and (min-width: 768px) {
+          .faq-container .contenedorInner .panel p {
+            font-weight: bold;
+            font-size: 16px;
+            font-weight: 400;
+            width: 542px;
+            text-align: start; } }
     .faq-container .contenedorInner .acordion-curba {
       background-color: #FFFFFF;
       height: 20px;
       border-radius: 0 0 20px 20px;
       border-top: none; }
     .faq-container .contenedorInner .noB {
-      border-bottom: none !important; }
+      border-bottom: none; }
     .faq-container .contenedorInner .activo {
-      display: block; }
+      display: flex;
+      justify-content: center; }
 
 .newsletter-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: .5rem; }
+  @media only screen and (min-width: 768px) {
+    .newsletter-container {
+      margin-bottom: -1.5rem; } }
   .newsletter-container .newsletter-img {
     width: 232px; }
+    @media only screen and (min-width: 768px) {
+      .newsletter-container .newsletter-img {
+        width: 350px;
+        margin-top: 1rem; } }
   .newsletter-container .newsletter-title {
     font-weight: 900;
     font-size: 32px;
     text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .newsletter-container .newsletter-title {
+        margin-top: 1rem;
+        font-weight: 900;
+        font-size: 40px; } }
   .newsletter-container .barrita-newsletter {
     color: #F088AF;
     background-color: #F088AF;
@@ -467,11 +579,23 @@ main {
     border: none;
     border-radius: 10px;
     width: 180px; }
+    @media only screen and (min-width: 768px) {
+      .newsletter-container .barrita-newsletter {
+        justify-self: center;
+        color: #F088AF;
+        background-color: #F088AF;
+        height: 3px;
+        border: none;
+        border-radius: 10px;
+        width: 200px; } }
   .newsletter-container .newsletter-text {
     font-size: 14px;
     font-weight: normal;
     text-align: center;
     width: 288px; }
+    @media only screen and (min-width: 768px) {
+      .newsletter-container .newsletter-text {
+        font-size: 20px; } }
 
 .contact-rrss-container {
   display: flex;
@@ -517,8 +641,14 @@ main {
   background-color: #FFFFFF;
   padding: 0.5rem 0;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.507); }
+  @media only screen and (min-width: 768px) {
+    .footer-container .codigoyTexto {
+      justify-content: space-around; } }
   .footer-container .codigoyTexto p {
     display: none; }
+    @media only screen and (min-width: 768px) {
+      .footer-container .codigoyTexto p {
+        display: block; } }
 
 .iconoSubir {
   width: 50px; }
