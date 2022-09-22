@@ -2,26 +2,30 @@
     padding: 1rem;
     display: flex;
     overflow-x: scroll;
-
+    scroll-snap-type: x mandatory;
     .testimonios-card{
+        scroll-snap-align: center;
         margin: 0 20px;
-        height: 264px;
-        min-width: 216px;
+        height: 360px;
+        min-width: 268px;
         padding: 1rem;
         background-color: $blanco;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        border-radius: 10px;
+        border-radius: 14px;
+        box-shadow: 8px 8px 14px rgba(75, 74, 74, 0.2);
         img{
             width: 40px;
             height: 40px;
         }
         .user-name{
-            @include latoBold16;
+            @include latoBold20;
+            letter-spacing: 1px;
             color: $botonRojo;
             text-rendering: geometricPrecision;
+            text-shadow: 1px 1px 8px rgba(0,0,0,.1);
         }
         .testimonio-usuario{
             margin: 15px 0;
@@ -30,10 +34,10 @@
             text-align: center;
             text-rendering: optimizeLegibility;
             
-            @include latoReg14;
+            @include latoReg16;
         }
         .card-facebook{
-            @include latoItalic12;
+            @include latoItalic14;
         }
     }
 }
