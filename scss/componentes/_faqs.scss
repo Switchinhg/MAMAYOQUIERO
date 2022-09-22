@@ -31,33 +31,44 @@
             width: 100%;
             border: none;
             outline: none;
-            border-bottom: solid 3px $separadoresPregFrec;
+            border-bottom: solid 2px $separadoresPregFrec;
             text-align: start;
             font-weight: 600;    
         }
         .border{
             border-radius: 20px 20px 0 0;
         }
-        .borderR{
-            border-radius: 0 0 20px 20px;
-        }
         .panel {
             background-color: $blanco;
             display: none;
-            border-bottom: solid 3px $separadoresPregFrec;
+            border-bottom: solid 2px $separadoresPregFrec;
             padding: 1rem ;
             overflow: hidden;
             border-left: solid 4px $separadores;
             p{
                 @include latoReg13;
             }
-        /* para Js */
+            
+        
         }
+        .acordion-curba{
+            background-color: $blanco;
+            height: 20px;
+            border-radius: 0 0 20px 20px;
+            border-top: none;
+        }
+        .noB {
+            border-bottom: none !important;
+        }
+        /* para Js */
         .activo{
             display: block;
         }
     }
 }
+
+
+
 
 
 
