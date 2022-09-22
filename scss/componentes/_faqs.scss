@@ -14,6 +14,9 @@
             gap: 1rem;
             margin-bottom: 1rem;
             line-height: 1.3rem;
+            @media only screen and (min-width: 768px) {
+                align-items: center;
+            } 
             .barritaProdpf{
                 @include barrita(160px, 3px);
             }
@@ -34,6 +37,11 @@
             border-bottom: solid 2px $separadoresPregFrec;
             text-align: start;
             font-weight: 600;    
+            @media only screen and (min-width: 768px) {
+                @include latoBold20;
+                font-weight: normal;
+                gap: .5rem;
+            } 
         }
         .border{
             border-radius: 20px 20px 0 0;
@@ -47,6 +55,14 @@
             border-left: solid 4px $separadores;
             p{
                 @include latoReg13;
+                @media only screen and (min-width: 768px) {
+                    @include latoBold16;
+                    font-weight: 400;
+                    width: 542px;
+                    text-align: start;
+                    
+
+                } 
             }
             
         
@@ -58,11 +74,12 @@
             border-top: none;
         }
         .noB {
-            border-bottom: none !important;
+            border-bottom: none;
         }
         /* para Js */
         .activo{
-            display: block;
+            display: flex;
+            justify-content: center;
         }
     }
 }

@@ -1,17 +1,36 @@
 .nosotros-container{
     padding: 2rem;
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    } 
     .nosotros-title{
         @include latoBlack32;
+        @media only screen and (min-width: 768px) {
+            @include latoBlack40;
+        } 
     }
     .barrita-nosotros{
         margin-top: 1rem;
         margin-bottom: -.5rem;
         @include barrita(130px, 2px);
+        @media only screen and (min-width: 768px) {
+            margin-top: 0.8rem;
+            margin-bottom: -.2rem;
+            @include barrita(200px, 3px);
+        } 
     }
     .nosotros-description{
         @include latoReg16;
         line-height: 24px;
         margin-top: 1rem;
         width: 280px;
+        @media only screen and (min-width: 768px) {
+            text-align: center;
+            width: 720px;
+            @include latoReg20;
+        } 
     }
 }
