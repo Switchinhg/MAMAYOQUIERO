@@ -9,11 +9,6 @@ const mainIcons = document.querySelector('.header-btn-container') */
 
 const showMenu = (e) => {
     collapsibleMenu.classList.toggle('nav-open');
-    /* mainTitle.classList.toggle('header-title-dark');
-const showMenu = () => {
-    collapsibleMenu.classList.toggle('nav-open');/* 
-    mainTitle.classList.toggle('header-title-dark');
-    mainIcons.classList.toggle('header-btn-container-open'); */
 }
 
 btnBurger.addEventListener('click', showMenu);
