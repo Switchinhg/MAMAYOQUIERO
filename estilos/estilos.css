@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: 'Lato', sans-serif; }
 
+html {
+  scroll-behavior: smooth; }
+
 :root {
   font-size: 24px; }
 
@@ -300,7 +303,7 @@ main {
         width: auto;
         align-items: center;
         display: flex;
-        padding: 0 1rem 1rem 1rem;
+        padding: 0 0.19rem 1rem 0.18rem;
         flex-direction: column;
         gap: 1rem; }
         .productos-rec-container .prodsRecWrap .prodsWrap .infoWrap .prodsTitulo {
@@ -385,7 +388,8 @@ main {
   margin: 0 2rem; }
   .faq-container .contenedorInner {
     width: 100%;
-    max-width: 800px; }
+    max-width: 800px;
+    /* para Js */ }
     .faq-container .contenedorInner .pregTitulo {
       font-weight: 900;
       font-size: 32px;
@@ -416,23 +420,27 @@ main {
       width: 100%;
       border: none;
       outline: none;
-      border-bottom: solid 3px #FFE1EC;
+      border-bottom: solid 2px #FFE1EC;
       text-align: start;
       font-weight: 600; }
     .faq-container .contenedorInner .border {
       border-radius: 20px 20px 0 0; }
-    .faq-container .contenedorInner .borderR {
-      border-radius: 0 0 20px 20px; }
     .faq-container .contenedorInner .panel {
       background-color: #FFFFFF;
       display: none;
-      border-bottom: solid 3px #FFE1EC;
+      border-bottom: solid 2px #FFE1EC;
       padding: 1rem;
       overflow: hidden;
-      border-left: solid 4px #F088AF;
-      /* para Js */ }
+      border-left: solid 4px #F088AF; }
       .faq-container .contenedorInner .panel p {
         font-size: 13px; }
+    .faq-container .contenedorInner .acordion-curba {
+      background-color: #FFFFFF;
+      height: 20px;
+      border-radius: 0 0 20px 20px;
+      border-top: none; }
+    .faq-container .contenedorInner .noB {
+      border-bottom: none !important; }
     .faq-container .contenedorInner .activo {
       display: block; }
 
