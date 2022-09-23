@@ -58,7 +58,11 @@
                 @media only screen and (min-width: 768px) {
                     @include latoBold16;
                     font-weight: 400;
-                    padding: 0 1.7rem;
+                    width: 600px;
+                    text-align: start;
+                    position: relative;
+                    left: -1.4rem;
+                    
                     
 
                 } 
