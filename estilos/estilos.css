@@ -146,13 +146,31 @@ main {
   padding-right: 15px;
   padding-left: 15px;
   background-color: #FFF2F7; }
+  @media only screen and (min-width: 1224px) {
+    .header {
+      padding-bottom: 0;
+      padding-right: 0;
+      padding-left: 0;
+      padding: 0 7rem;
+      align-items: center;
+      justify-content: space-between; } }
   .header .logo {
     width: 76px;
     height: 41px; }
+    @media only screen and (min-width: 1224px) {
+      .header .logo {
+        height: 73px;
+        width: 130px; } }
     .header .logo .nav-logo {
       width: 76px; }
+      @media only screen and (min-width: 1224px) {
+        .header .logo .nav-logo {
+          width: 130px; } }
   .header .btn-burger {
     width: 30px; }
+    @media only screen and (min-width: 1224px) {
+      .header .btn-burger {
+        display: none; } }
 
 .nav-mobile-collapsible-close {
   padding: 1rem 0;
@@ -168,6 +186,9 @@ main {
   background-color: #FFF2F7;
   transform: translateY(-100%);
   transition: .2s ease-in; }
+  @media only screen and (min-width: 1224px) {
+    .nav-mobile-collapsible-close {
+      display: none; } }
   .nav-mobile-collapsible-close .nav-mobile-title-container {
     position: relative;
     display: flex;
@@ -227,6 +248,21 @@ main {
 .nav-desktop {
   display: none; }
 
+@media only screen and (min-width: 1224px) {
+  .nav-desktop {
+    display: flex; }
+    .nav-desktop ul {
+      display: flex;
+      gap: 2rem;
+      align-items: center; }
+      .nav-desktop ul li {
+        list-style-type: none; }
+        .nav-desktop ul li a {
+          font-weight: 600;
+          font-size: 20px;
+          text-decoration: none;
+          color: #880935; } }
+
 .welcome-container {
   margin-top: 1.2rem;
   padding: 1rem;
@@ -248,6 +284,9 @@ main {
       width: 75vw;
       margin: 1rem auto;
       column-gap: 3rem; } }
+  @media only screen and (min-width: 1440px) {
+    .welcome-container {
+      margin: 5rem auto; } }
 
 .welcome-description {
   display: flex;
@@ -412,7 +451,8 @@ main {
       gap: 0;
       background-color: #FFFFFF;
       border-radius: 20px;
-      padding: 1rem; }
+      padding: 1rem;
+      max-width: 350px; }
       @media only screen and (min-width: 768px) {
         .productos-rec-container .prodsRecWrap .prodsWrap {
           min-width: 350px;
@@ -420,6 +460,7 @@ main {
       @media only screen and (min-width: 1224px) {
         .productos-rec-container .prodsRecWrap .prodsWrap {
           min-width: 350px;
+          max-width: none;
           border-radius: 0;
           box-shadow: none;
           background-color: transparent;
@@ -655,8 +696,7 @@ main {
             font-weight: bold;
             font-size: 16px;
             font-weight: 400;
-            width: 542px;
-            text-align: start; } }
+            padding: 0 1.7rem; } }
     .faq-container .contenedorInner .acordion-curba {
       background-color: #FFFFFF;
       height: 20px;
@@ -671,9 +711,10 @@ main {
 @media only screen and (min-width: 1224px) {
   .madmax-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; } }
+    margin: 1rem 0; } }
 
 .madmax-container .newsletter-container {
   display: flex;
@@ -685,7 +726,7 @@ main {
       margin-bottom: -1.5rem; } }
   @media only screen and (min-width: 1224px) {
     .madmax-container .newsletter-container {
-      /* flex-direction: row; */ } }
+      flex-direction: row; } }
   .madmax-container .newsletter-container .newsletter-img {
     width: 232px; }
     @media only screen and (min-width: 768px) {
@@ -725,6 +766,29 @@ main {
     @media only screen and (min-width: 768px) {
       .madmax-container .newsletter-container .newsletter-text {
         font-size: 20px; } }
+  @media only screen and (min-width: 1224px) {
+    .madmax-container .newsletter-container .newsletter-texts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem; } }
+
+.madmax-container .p-inline {
+  display: flex;
+  justify-content: center; }
+  @media only screen and (min-width: 1224px) {
+    .madmax-container .p-inline {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      left: 8rem;
+      bottom: 2rem; } }
+
+.madmax-container .p-submitting {
+  max-width: 600px !important; }
+  @media only screen and (min-width: 1224px) {
+    .madmax-container .p-submitting {
+      width: 500px; } }
 
 .contact-rrss-container {
   display: flex;

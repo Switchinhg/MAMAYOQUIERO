@@ -8,15 +8,33 @@
     padding-right: 15px;
     padding-left: 15px;
     background-color: $fondoLanding;
+    @media only screen and (min-width: 1224px) {
+        padding-bottom:0;
+        padding-right: 0;
+        padding-left: 0;
+        padding: 0 7rem;
+        align-items: center;
+        justify-content:space-between;
+    }
     .logo{
         width: 76px;
         height: 41px;
+        @media only screen and (min-width: 1224px) {
+            height:73px ;
+            width: 130px;
+        }
         .nav-logo{
             width: 76px;
+            @media only screen and (min-width: 1224px) {
+                width: 130px;
+            }
         }
     }
     .btn-burger{
         width: 30px;
+        @media only screen and (min-width: 1224px) {
+            display: none;
+        }
     }
 }
 
@@ -36,6 +54,9 @@
     transform: translateY(-100%);
     transition: .2s ease-in;
 
+    @media only screen and (min-width: 1224px) {
+        display: none;
+    }
     .nav-mobile-title-container{
         position: relative;
         display: flex;
@@ -105,3 +126,22 @@
     display: none;
 }
 
+.nav-desktop{
+    @media only screen and (min-width: 1224px) {
+        display: flex;
+        ul{
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            li{
+                list-style-type: none;
+                a{
+                    @include latoBold20;
+                    text-decoration: none;
+                    color: $botonRojo;
+                }
+            }
+        }
+
+    }
+}

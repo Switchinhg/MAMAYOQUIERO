@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./imgs/imagenes/congrats-img-kid.png" type="image/x-icon">
     <!-- Font awesome icons-->
     <script src="https://kit.fontawesome.com/b4fc7efcd0.js" crossorigin="anonymous"></script>
     <!-- Akar icons -->
@@ -18,7 +20,7 @@
     <link rel="stylesheet" href="./estilos/estilos.css">
     <!-- Stylesheet form newsletter (my perfit)  -->
     <link rel="stylesheet" type="text/css" href="https://optin.myperfit.com/res/css/mamayoquiero/C7Cq8xUX.css"/>
-    <title>Mamá yo quiero</title>
+    <title>Mama yo quiero</title>
 </head>
 <body class="gradiente">
     <header class="header">
@@ -63,9 +65,9 @@
         <!-- Navbar DESKTOP -->
         <div class="nav-desktop">
             <ul>
-                <li href="#" class="mobile-links">Tienda</li>
-                <li href="#" class="mobile-links">Nosotros</li>
-                <li href="#" class="mobile-links">Ayuda</li>
+                <li class="mobile-links"><a href="https://mamayoquiero.com.ar/">Tienda</a></li>
+                <li class="mobile-links"><a href="#nosotros">Nosotros</a></li>
+                <li class="mobile-links"><a href="#preguntasFrecuentes">Ayuda</a></li>
             </ul>
         </div>
     </header>
@@ -176,15 +178,18 @@
         </section>
 
         <!-- Suscripcion newsletter -->
-        <div class="madmax-container">
-            <section class="newsletter-container">
+        <section class="madmax-container">
+            <div class="newsletter-container">
                 <img class="newsletter-img" src="imgs/imagenes/newsletter-img.png" alt="suscribite">
-                <h2 class="newsletter-title">No te pierdas <br> nuestras ofertas</h2>
-                <hr class="barrita-newsletter"> 
-                <p class="newsletter-text">Es un buen momento para que te suscribas y recibas todas las ofertas, tutoriales y más</p>
-            </section>
-            <div style="display:flex; justify-content:center;" id="optin-C7Cq8xUX" data-type="inline"></div>
-        </div>
+                <div class="newsletter-texts">
+                    <h2 class="newsletter-title">No te pierdas <br> nuestras ofertas</h2>
+                    <hr class="barrita-newsletter"> 
+                    <p class="newsletter-text">Es un buen momento para que te suscribas y recibas todas las ofertas, tutoriales y más</p>
+                </div>
+            
+            </div>
+            <div  class="newsletter-form" id="optin-C7Cq8xUX" data-type="inline"></div>
+        </section>
 
             <!-- Sección de Preguntas frecuentes -->
         <section id="preguntasFrecuentes" class="faq-container">

@@ -1,9 +1,10 @@
 .madmax-container{
     @media only screen and (min-width: 1224px) {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        margin: 1rem 0;
     }
     .newsletter-container{
         display: flex;
@@ -14,7 +15,7 @@
             margin-bottom: -1.5rem;
         } 
         @media only screen and (min-width: 1224px) {
-            /* flex-direction: row; */ 
+            flex-direction: row; 
         }
         .newsletter-img {
             width: 232px;
@@ -46,6 +47,32 @@
                 @include latoReg20;
             } 
         } 
+        .newsletter-texts{
+            @media only screen and (min-width: 1224px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+            }
+        }
+    }
+    .p-inline{
+        display: flex;
+        justify-content: center;
+        @media only screen and (min-width: 1224px) {
+            display:flex; 
+            justify-content:center; 
+            position: relative; 
+            left: 8rem;
+            bottom: 2rem;
+        }
+    }
+    .p-submitting{
+        @media only screen and (min-width: 1224px) {
+            width: 500px;
+        } 
+        
+        max-width: 600px !important;
     }
 }
 
