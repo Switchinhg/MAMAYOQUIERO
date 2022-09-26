@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap");
 * {
   margin: 0;
@@ -51,6 +52,9 @@ main {
   height: 48px;
   color: #FFFFFF;
   background-color: #880935; }
+  @media only screen and (min-width: 1224px) {
+    .botonDescuentoFijo {
+      height: 40px; } }
 
 .botonDescuentoClickeadoFijo {
   font-size: 13px;
@@ -135,6 +139,30 @@ main {
 .latoBlack64 {
   font-weight: 900;
   font-size: 64px; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes Wiggle {
+  0%,
+  100% {
+    transform: translateX(0); }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-20px); }
+  20%,
+  40%,
+  60% {
+    transform: translateX(20px); }
+  80% {
+    transform: translateX(16px); }
+  90% {
+    transform: translateX(-16px); } }
 
 .header {
   position: relative;
@@ -736,67 +764,81 @@ main {
       .madmax-container .newsletter-container .newsletter-img {
         width: 350px;
         margin-top: 1rem; } }
-  .madmax-container .newsletter-container .newsletter-title {
-    font-weight: 900;
-    font-size: 32px;
-    text-align: center; }
-    @media only screen and (min-width: 768px) {
-      .madmax-container .newsletter-container .newsletter-title {
-        margin-top: 1rem;
-        font-weight: 900;
-        font-size: 40px; } }
-  .madmax-container .newsletter-container .barrita-newsletter {
-    color: #F088AF;
-    background-color: #F088AF;
-    height: 0.1rem;
-    border: none;
-    border-radius: 10px;
-    width: 180px; }
-    @media only screen and (min-width: 768px) {
-      .madmax-container .newsletter-container .barrita-newsletter {
-        justify-self: center;
-        color: #F088AF;
-        background-color: #F088AF;
-        height: 3px;
-        border: none;
-        border-radius: 10px;
-        width: 200px; } }
-  .madmax-container .newsletter-container .newsletter-text {
-    font-size: 14px;
-    font-weight: normal;
-    text-align: center;
-    width: 288px; }
-    @media only screen and (min-width: 768px) {
-      .madmax-container .newsletter-container .newsletter-text {
-        font-size: 20px; } }
-  @media only screen and (min-width: 1224px) {
-    .madmax-container .newsletter-container .newsletter-texts {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.5rem; } }
+    @media only screen and (min-width: 1224px) {
+      .madmax-container .newsletter-container .newsletter-img {
+        align-self: flex-start;
+        width: 450px; } }
+  .madmax-container .newsletter-container .newsletter-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media only screen and (min-width: 1224px) {
+      .madmax-container .newsletter-container .newsletter-texts {
+        gap: 0.5rem; } }
+    .madmax-container .newsletter-container .newsletter-texts .newsletter-title {
+      font-weight: 900;
+      font-size: 32px;
+      text-align: center; }
+      @media only screen and (min-width: 768px) {
+        .madmax-container .newsletter-container .newsletter-texts .newsletter-title {
+          margin-top: 1rem;
+          font-weight: 900;
+          font-size: 40px; } }
+    .madmax-container .newsletter-container .newsletter-texts .barrita-newsletter {
+      color: #F088AF;
+      background-color: #F088AF;
+      height: 0.1rem;
+      border: none;
+      border-radius: 10px;
+      width: 180px; }
+      @media only screen and (min-width: 768px) {
+        .madmax-container .newsletter-container .newsletter-texts .barrita-newsletter {
+          justify-self: center;
+          color: #F088AF;
+          background-color: #F088AF;
+          height: 3px;
+          border: none;
+          border-radius: 10px;
+          width: 200px; } }
+    .madmax-container .newsletter-container .newsletter-texts .newsletter-text {
+      font-size: 14px;
+      font-weight: normal;
+      text-align: center;
+      width: 288px; }
+      @media only screen and (min-width: 768px) {
+        .madmax-container .newsletter-container .newsletter-texts .newsletter-text {
+          font-size: 20px; } }
 
 .madmax-container .p-inline {
   display: flex;
   justify-content: center; }
   @media only screen and (min-width: 1224px) {
     .madmax-container .p-inline {
-      display: flex;
-      justify-content: center;
-      position: relative;
-      left: 8rem;
-      bottom: 2rem; } }
+      align-self: center;
+      justify-self: center;
+      margin-top: -1.5rem;
+      /* display:flex; 
+            justify-content:center; 
+            position: relative; 
+            left: 12rem;
+            bottom: 6rem; */ } }
 
 .madmax-container .p-submitting {
+  width: 360px;
+  font-size: 16px;
+  font-weight: normal;
   max-width: 600px !important; }
   @media only screen and (min-width: 1224px) {
     .madmax-container .p-submitting {
-      width: 500px; } }
+      width: 500px;
+      font-size: 20px; } }
 
 .contact-rrss-container {
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  gap: 1rem; }
   .contact-rrss-container .rrss-img {
     width: 232px; }
   .contact-rrss-container .rrss-title {
@@ -840,11 +882,21 @@ main {
   @media only screen and (min-width: 768px) {
     .footer-container .codigoyTexto {
       justify-content: space-around; } }
+  @media only screen and (min-width: 1224px) {
+    .footer-container .codigoyTexto {
+      height: 50px;
+      padding: 0.2; } }
   .footer-container .codigoyTexto p {
+    font-size: 14px;
+    font-weight: normal;
     display: none; }
     @media only screen and (min-width: 768px) {
       .footer-container .codigoyTexto p {
-        display: block; } }
+        display: block;
+        width: 250px; } }
+    @media only screen and (min-width: 1224px) {
+      .footer-container .codigoyTexto p {
+        width: auto; } }
 
 .iconoSubir {
   width: 50px; }
@@ -857,7 +909,8 @@ main {
   position: fixed;
   bottom: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  animation: fadein .5s ease; }
 
 .fixed2 {
   position: fixed;
@@ -865,80 +918,19 @@ main {
   left: 0;
   right: 0;
   margin: 0 calc(50% - 20px);
-  margin-bottom: 3.5rem; }
+  margin-bottom: 3.5rem;
+  animation: fadein .5s ease; }
+  @media only screen and (min-width: 1224px) {
+    .fixed2 {
+      margin-bottom: 2.5rem; } }
 
-@media only screen and (max-width: 768px) {
-  /* Preguntas Frecuentes */
-  /* .codigoyTexto{
-        justify-content: space-around;
-        p{
-            display: none;
-        }
-    } */
-  /* 
-    .acordion{
-        @include latoBold12;
-    }
-    .panel {
-        padding: 1rem ;
-
-        p{
-            @include latoReg13;
-        }
-    }
-    .pregTitulo{
-        @include latoBlack32;
-        align-items: flex-start;
-
-    }
-    // Productos Destacados 
-
-    .prodsWrap{
-        
-        gap: 0;
-        background-color: $blanco;
-        border-radius: 20px;
-    }
-    .infoWrap{
-        width: auto;
-        align-items: center;
-        padding: 0 1rem 1rem 1rem;
-    }
-    .invert{
-        flex-direction: column;
-    }
-    .prodsTitulo{
-        
-    }
-    .textoProdsR{
-        line-height: 1rem;
-        text-align: center;
-        @include latoReg16
-    }
-    .prodsImg{
-        width: 216px;
-    }
-    .prodsRecWrap{
-        background-color: rgba(255, 255, 255, 0);
-        gap: 1rem;
-    }
-    .barritaProd{
-        @include barrita(160px, 3px);
-    }
- */ }
+/*Animación inyectada con js para boton descuento 
+cuando está en vista*/
+.animacionWiggle {
+  /* animation: Wiggle 1s  1 alternate ease-out forwards; */
+  /* -webkit-animation: bounce-right 1s ease-in-out infinite both;
+	animation: bounce-right 1s ease-in-out infinite both; */
+  -webkit-animation: Wiggle 1s both;
+  animation: Wiggle 1s both; }
 
 /* animacion */
-.animacionWiggle {
-  animation: Wiggle 1s  1 alternate ease-out forwards; }
-
-@keyframes Wiggle {
-  0% { }
-  20% {
-    transform: translate(-4rem, 0); }
-  40% {
-    transform: translate(4rem, 0); }
-  60% {
-    transform: translate(-2rem, 0); }
-  80% {
-    transform: translate(2rem, 0); }
-  100% { } }

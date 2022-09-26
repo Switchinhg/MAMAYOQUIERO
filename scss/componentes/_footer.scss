@@ -20,15 +20,22 @@
         @media only screen and (min-width: 768px) {
             justify-content: space-around;
         } 
+        @media only screen and (min-width: 1224px) {
+            height: 50px;
+            padding: 0.2;
+        } 
         p{
+            @include latoReg14;
             display: none;
             @media only screen and (min-width: 768px) {
                 display: block;
+                width: 250px;
+            } 
+            @media only screen and (min-width: 1224px) {
+                width: auto;
             } 
         }
     }
-    
-
 }
 .iconoSubir{
     width: 50px;
@@ -43,6 +50,7 @@
     bottom: 0;
     left: 0;
     right: 0;
+    animation: fadein .5s ease;
 }
 .fixed2{
     position: fixed;
@@ -51,4 +59,19 @@
     right: 0;
     margin: 0 calc(50% - 20px);
     margin-bottom: 3.5rem;
+    animation: fadein .5s ease;
+    @media only screen and (min-width: 1224px) {
+        margin-bottom: 2.5rem;
+    } 
+}
+
+/*Animación inyectada con js para boton descuento 
+cuando está en vista*/
+
+.animacionWiggle{
+    /* animation: Wiggle 1s  1 alternate ease-out forwards; */
+    /* -webkit-animation: bounce-right 1s ease-in-out infinite both;
+	animation: bounce-right 1s ease-in-out infinite both; */
+    -webkit-animation: Wiggle 1s both;
+	animation: Wiggle 1s both;
 }

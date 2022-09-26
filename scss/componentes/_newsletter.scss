@@ -23,53 +23,65 @@
                 width:350px ;
                 margin-top: 1rem;
             } 
-        }
-        .newsletter-title{
-            @include latoBlack32;
-            text-align: center;
-            @media only screen and (min-width: 768px) {
-                margin-top: 1rem;
-                @include latoBlack40;
-            } 
-        }
-        .barrita-newsletter{
-            @include barrita(180px, .1rem);
-            @media only screen and (min-width: 768px) {
-                justify-self: center;
-                @include barrita (200px , 3px)
-            } 
-        }
-        .newsletter-text{
-            @include latoReg14;
-            text-align: center;
-            width: 288px;
-            @media only screen and (min-width: 768px) {
-                @include latoReg20;
-            } 
-        } 
-        .newsletter-texts{
             @media only screen and (min-width: 1224px) {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                align-self: flex-start;
+                width:450px;
+            } 
+        }
+        .newsletter-texts{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media only screen and (min-width: 1224px) {
                 gap: 0.5rem;
             }
+            .newsletter-title{
+                @include latoBlack32;
+                text-align: center;
+                @media only screen and (min-width: 768px) {
+                    margin-top: 1rem;
+                    @include latoBlack40;
+                } 
+            }
+            .barrita-newsletter{
+                @include barrita(180px, .1rem);
+                @media only screen and (min-width: 768px) {
+                    justify-self: center;
+                    @include barrita (200px , 3px)
+                } 
+            }
+            .newsletter-text{
+                @include latoReg14;
+                text-align: center;
+                width: 288px;
+                @media only screen and (min-width: 768px) {
+                    @include latoReg20;
+                } 
+            } 
         }
+        
+
     }
     .p-inline{
         display: flex;
         justify-content: center;
         @media only screen and (min-width: 1224px) {
-            display:flex; 
+            align-self: center;
+            justify-self: center;
+            margin-top: -1.5rem;
+            /* display:flex; 
             justify-content:center; 
             position: relative; 
-            left: 8rem;
-            bottom: 2rem;
+            left: 12rem;
+            bottom: 6rem; */
         }
     }
     .p-submitting{
+        width: 360px;
+        @include latoReg16;
         @media only screen and (min-width: 1224px) {
             width: 500px;
+            @include latoReg20;
         } 
         
         max-width: 600px !important;
