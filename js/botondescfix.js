@@ -13,16 +13,16 @@ iconoSubir.addEventListener('click', () =>{
 
 botonCopiar.addEventListener('click', () =>{
     botonCopiar.innerHTML = `<button class="boton botonDescuentoClickeado"><img src="./imgs/iconos/IconCheckBlanco.svg" alt="Icono de texto copiado"> Código de descuento copiado</button>`
-    ClipboardJS.copy('MAMAYOQUIERO')
+    ClipboardJS.copy('MAMAENLAEXPO')
     setTimeout(() => {
-        botonCopiar.innerHTML =   `<button class="boton botonDescuento"><img src="./imgs/iconos/IconCopyNegro.svg" alt="Icono de copiar texto"> <span> Cod. 10% descuento <b>MAMAYOQUIERO</b></span></button>`  
+        botonCopiar.innerHTML =   `<button class="boton botonDescuento"><img src="./imgs/iconos/IconCopyNegro.svg" alt="Icono de copiar texto"> <span> Cod. 10% descuento <b>MAMAENLAEXPO</b></span></button>`  
     }, 2000);
 })
 botonRojo.addEventListener('click', () =>{
     botonRojo.innerHTML = `<button id="select" class="boton botonDescuentoClickeadoFijo"><img src="./imgs/iconos/IconCheckNegro.svg" alt="icono de copiar texto"> Código de descuento copiado</button>`
-    ClipboardJS.copy('MAMAYOQUIERO')
+    ClipboardJS.copy('MAMAENLAEXPO')
     setTimeout(() => {
-        botonRojo.innerHTML =   `<button id="select" class="boton botonDescuentoFijo"><img src="./imgs/iconos/IconCopyBlanco.svg" alt="icono de copiar texto"> <span> Cod. 10% descuento <b>MAMAYOQUIERO</b></span></button>`  
+        botonRojo.innerHTML =   `<button id="select" class="boton botonDescuentoFijo"><img src="./imgs/iconos/IconCopyBlanco.svg" alt="icono de copiar texto"> <span> Cod. 10% descuento <b>MAMAENLAEXPO</b></span></button>`  
     }, 2000);
 })
 
