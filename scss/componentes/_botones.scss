@@ -28,7 +28,10 @@
     color: $blanco;
     font-weight: bold;
     width: 300px;
-    height: 40px;
+    height: 48px;
+    @media only screen and (min-width: 1224px) {
+        height: 40px;
+    }
 }
 /* botones descuentos Fijo bottom */
 .botonDescuentoFijo{
