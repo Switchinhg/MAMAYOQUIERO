@@ -44,6 +44,9 @@ main {
   font-weight: bold;
   width: 300px;
   height: 48px; }
+  @media only screen and (min-width: 1224px) {
+    .botonDescuentoClickeado {
+      height: 40px; } }
 
 /* botones descuentos Fijo bottom */
 .botonDescuentoFijo {
