@@ -37,6 +37,9 @@
     height: 48px;
     color:$blanco;
     background-color: $botonRojo;
+    @media only screen and (min-width: 1224px) {
+        height: 40px;
+    }
 }   
 .botonDescuentoClickeadoFijo{
     @include latoReg13; 
